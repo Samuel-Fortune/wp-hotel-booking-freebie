@@ -1,0 +1,49 @@
+/*!
+Theme Name: Hotel booking freebie
+Theme URI: http://underscores.me/
+Author: Samuel Fortune
+Author URI: https://github.com/Samuel-Fortune?tab=overview&from=2023-02-01&to=2023-02-08
+Description: Hotel booking Freebie is a blank canvas for your ideas and it makes the block editor your best brush. With new block patterns, which allow you to create a beautiful layout in a matter of seconds, this theme’s soft colors and eye-catching — yet timeless — design will let your work shine. Take it for a spin!
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: hotel-booking-freebie
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+Hotel booking freebie is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Custom
+	- Base
+	- Layout
+	- Module
+	- State
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Custom Style
+--------------------------------------------------------------*/
+
+/* Import Custom Styles
+--------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,900&display=swap');
+@import "./custom/base";
+@import "./custom/layout";
+@import "./custom/module";
+@import "./custom/state";

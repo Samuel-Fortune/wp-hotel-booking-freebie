@@ -1,0 +1,163 @@
+// This are variables for sizing across the site
+//Font sizings
+$smallest-sizing: 10px;
+$smaller-sizing: 12px;
+$small-sizing: 13px;
+$medium-sizing: 14px;
+$Large-sizing: 18px;
+$larger-sizing: 24px;
+$largest-sizing: 36px;
+$extralarge-sizing: 64px;
+
+//Colors
+$primary-color: #ec1f46;
+$secondary-color: #fff;
+$tertiary-color: #0a223d;
+$header-color: #333;
+$footer-text-color: #bdbdbd;
+$main-bg-color: #f5fafe;
+
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Mulish;
+	background-color: $main-bg-color;
+}
+
+a {
+	text-decoration: none;
+	color: $header-color;
+}
+
+h1 {
+	font-size: $extralarge-sizing;
+}
+
+h2 {
+	font-size: $largest-sizing;
+}
+
+h3 {
+	font-size: $larger-sizing;
+	line-height: 30px;
+}
+
+h4 {
+	font-size: $Large-sizing;
+}
+
+h5 {
+	font-size: $medium-sizing;
+}
+
+h6 {
+	font-size: $small-sizing;
+}
+
+p {
+	font-size: $smaller-sizing;
+}
+
+ul {
+	list-style: none;
+	line-height: $larger-sizing;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+li {
+
+	@extend ul;
+
+	font-style: normal;
+	font-family: Mulish;
+	font-weight: 700;
+	font-size: $medium-sizing;
+
+	a {
+		color: $secondary-color !important;
+	}
+}
+
+.flex {
+	display: flex;
+
+	&.justify-between {
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	&.item-center {
+		align-items: center;
+	}
+
+	&.gap {
+		gap: 18px;
+	}
+}
+
+.button {
+	border: none;
+	cursor: pointer;
+	background: none;
+}
+
+/*
+0-640px: phone
+640-768px: Tablet portrait
+768 - 1024px: Tablet landscape
+1024 - px:  small desktop styles
+$breakpoint arguments choices:
+-sm
+-md
+-lg
+-xl
+1em = 16px
+*/
+@mixin respond($breakpoint) {
+
+	@if $breakpoint ==sm {
+
+		@media only screen and (min-width: 40em) {
+			@content;
+		}
+		//640px
+	}
+
+	@if $breakpoint ==md {
+
+		@media only screen and (min-width: 48em) {
+			@content;
+		}
+		//768px
+	}
+
+	@if $breakpoint ==lg {
+
+		@media only screen and (min-width: 64em) {
+			@content;
+		}
+
+		//1024px
+	}
+
+	/*
+	@if $breakpoint ==xl {
+
+		@media only screen and (miin-width: 80em) {
+			@content;
+		}
+
+		//1280px
+	}
+
+	@if $breakpoint ==2xl {
+		@media only screen and (max-width: 96em) {
+			@content;
+		}
+
+		//1536px
+	}
+	*/
+}

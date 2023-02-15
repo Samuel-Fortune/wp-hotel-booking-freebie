@@ -1,0 +1,43 @@
+.site-wrapper {
+	width: 79%;
+	//height: max-content;
+	padding: 0 0;
+	margin: auto;
+
+	// @include respond(md) {
+	//     width: 79%;
+	//     max-width: 1100px;
+	//     padding: 0px;
+	// }
+}
+
+.wrapper {
+	width: 100%;
+}
+
+.column-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 33%;
+}
+
+.card-wrapper {
+	width: 80%;
+	height: max-content;
+	margin: auto;
+	padding: 0 0;
+
+}
+
+// .card-highlight-wrapper,
+// .card-details-wrapper {
+//     background-color: $secondary-color;
+
+// }
+
+.package-details-wrapper {
+	border-radius: calc($smallest-sizing - 2px);
+	width: 100%;
+
+}
