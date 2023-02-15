@@ -17,7 +17,7 @@
       <div class="footer-holder">
         <div class="best-tour-plan2 site-branding">
         <div class="site-branding logo-search" id="logo-search">
-				  <?php the_custom_logo();?>
+          <img src="<?php echo get_theme_mod( 'footer_image' ); ?>" alt="Footer Logo Image">
         </div>
         <div class="all-categories">
           <span>
@@ -54,9 +54,9 @@
               <span class="social-icons">
                 <h4>Social Network</h4>
                 <span>
-                  <a href=""><img src="./asset/icons/facebook.png" alt=""></a>
-                  <a href=""><img src="./asset/icons/youtube.png" alt=""></a>
-                  <a href=""><img src="./asset/icons/instagram.png" alt=""></a>
+                  <a href=""><img src="wp-content/themes/hotel-booking-freebie/asset/icons/facebook.png" alt=""></a>
+                  <a href=""><img src="wp-content/themes/hotel-booking-freebie/asset/icons/youtube.png" alt=""></a>
+                  <a href=""><img src="wp-content/themes/hotel-booking-freebie/asset/icons/instagram.png" alt=""></a>
                 </span>
 
               </span>
@@ -86,22 +86,37 @@
       <div class="contact-section">
         <div class="details">
           <span>
-            <h4>CONTACT DETAILS
-            <p><a href="">Fell free to contact us by phone, email or by our contact form </a></p>
+            <h4>CONTACT DETAILS</h4>
+            <p>
 
-            </h4>
+              <?php
+                echo get_theme_mod('footer_contact_details_form')
+              ?>
+            </p>
+
+           
           </span>
 
           <span>
-
-            <p><img src="./asset/icons/location.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States</p>
-            <p><img src="./asset/icons/bx_bxs-phone-call.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tel (business hours) : 269 1500<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</p>
-            <p><img src="./asset/icons/mail.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cherly.lawson@example.com</p>
+          
+            <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/location.png" alt="">
+            <?php
+              echo get_theme_mod('footer_address_text')
+            ?>
+            </p>
+            <p><img src="./asset/icons/bx_bxs-phone-call.png" alt="">
+            <img src="wp-content/themes/hotel-booking-freebie/asset/icons/Rectangle1.png" alt="">
+              <?php
+                echo get_theme_mod('footer_business_hours')
+              ?>
+            </p>
+            <p><img src="./asset/icons/mail.png" alt="">
+              <?php
+                echo get_theme_mod('footer_email')
+              ?>
+            </p>
 
           </span>
-
 
           </div>
           <div class="contact-form-section">
@@ -149,7 +164,7 @@
         </span>
 
         <span>
-          <img src="./asset/icons/image 3.png" alt="">
+          <img src="./asset/icons/image3.png" alt="">
         </span>
       </div>
 
