@@ -1,0 +1,1 @@
+# wp-hotel-booking-freebie
