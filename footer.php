@@ -164,7 +164,7 @@
         </span>
 
         <span>
-          <img src="./asset/icons/image3.png" alt="">
+          <img src="wp-content/themes/hotel-booking-freebie/asset/icons/image3.png" alt="">
         </span>
       </div>
 

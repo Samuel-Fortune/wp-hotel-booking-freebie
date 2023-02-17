@@ -970,13 +970,11 @@
 //This is my other packages section style
 .other-packages-section {
 	width: 100%;
-	height: 100%;
 
 	.other-package-wrapper {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		height: 100%;
 		gap: 20px;
 
 		.other-package-header {
@@ -1011,6 +1009,7 @@
 				width: 65%;
 				flex-direction: row;
 				border: 1px;
+				height: 500px;
 
 				.wrapp-image {
 					width: 49%;
@@ -1114,6 +1113,7 @@
 								display: flex;
 								justify-content: space-between;
 								align-items: center;
+								padding-top: 10px;
 
 
 								span {
@@ -1156,10 +1156,10 @@
 				width: 33%;
 				flex-direction: column;
 				border: 1px;
+				height: 500px;
 
 				.wrapp2-image {
-
-
+					height: 250px;
 					position: relative;
 					border-radius: 8px 8px 0 0;
 
@@ -1200,7 +1200,7 @@
 				.advisor-style2 {
 
 					width: 100%;
-					height: 100%;
+					height: 250px;
 					background-color: $tertiary-color;
 					color: $secondary-color;
 					border-radius: 0 0 8px 8px;
@@ -1298,14 +1298,16 @@
 				width: 30%;
 				flex-direction: column;
 				border: 1px;
+				height: 500px;
 
 				.wrapp3-image {
-
+					height: 250px;
 					position: relative;
 					border-radius: 8px 8px 0 0;
 
 					img {
 						width: 100%;
+						height: 100%;
 					}
 
 					span {
@@ -1338,7 +1340,7 @@
 
 
 				.advisor-style3 {
-
+					height: 250px;
 					width: 100%;
 					background-color: $tertiary-color;
 					color: $secondary-color;
@@ -1436,13 +1438,16 @@
 				width: 33%;
 				flex-direction: column;
 				border: 1px;
+				height: 500px;
 
 				.wrapp4-image {
+					height: 250px;
 					position: relative;
 					border-radius: 8px 8px 0 0;
 
 					img {
 						width: 100%;
+						height: 100%;
 					}
 
 					span {
@@ -1475,7 +1480,7 @@
 
 
 				.advisor-style4 {
-
+					height: 250px;
 					width: 100%;
 					background-color: $tertiary-color;
 					color: $secondary-color;
@@ -1573,13 +1578,16 @@
 				width: 33%;
 				flex-direction: column;
 				border: 1px;
+				height: 500px;
 
 				.wrapp5-image {
+					height: 250px;
 					position: relative;
 					border-radius: 8px 8px 0 0;
 
 					img {
 						width: 100%;
+						height: 100%;
 					}
 
 					span {
@@ -1612,7 +1620,7 @@
 
 
 				.advisor-style5 {
-
+					height: 250px;
 					width: 100%;
 					background-color: $tertiary-color;
 					color: $secondary-color;
@@ -2434,7 +2442,7 @@
 			display: flex;
 			justify-content: space-between;
 			gap: 20px;
-			width: 40%;
+			width: 100%;
 
 			p {
 				color: $secondary-color;

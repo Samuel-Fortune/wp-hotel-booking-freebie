@@ -174,7 +174,7 @@
 					<img src="wp-content/themes/hotel-booking-freebie/asset/images/Ellipse1.png" alt="">
 					<p>Nathan</p>
 					<button class="button">
-					<img src="asset/images/Vector(Stroke).png" alt="" />
+					<img src="wp-content/themes/hotel-booking-freebie/asset/images/Vector(Stroke).png" alt="">
 					</button>
 				</span>
 

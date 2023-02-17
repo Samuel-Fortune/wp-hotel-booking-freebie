@@ -19,9 +19,9 @@
       <div class="hotel-name">
         <div>
           <!--Star image-->
-          <span class="stars"
-            ><img src="asset/images/Stars.png" alt=""
-          /></span>
+          <span class="stars">
+            <img src="wp-content/themes/hotel-booking-freebie/asset/images/Stars.png" alt="">
+          </span>
           <!--GRAND HILTON HOTEL-->
           <div class="hilton-section">
             <h3>GRAND HILTON HOTEL</h3>
@@ -78,14 +78,15 @@
                 <div class="room">
                   <span>
                     <p>
-                      <img src="asset/icons/user.png" alt="" />&nbsp;&nbsp;&nbsp; 2x
+                    <img src="wp-content/themes/hotel-booking-freebie/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp; 2x
                       Guests
                     </p>
                     <p>
-                      <img src="asset/icons/home.png" alt="" />&nbsp; 
+                    <img src="wp-content/themes/hotel-booking-freebie/asset/icons/home.png" alt="">&nbsp; 
                       &nbsp;
                       &nbsp;
                       1x Room
+                  
                     </p>
                   </span>
                 </div>
@@ -176,13 +177,14 @@
                 <div class="card-highlight">
                     
                   <div class="card1">
-                    <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Half Board/ All Inclusive</p>
-                    <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Child Under 11 Years Stay Free</p>
-                    <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LUX* Me Spa</p>
+                    <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Half Board/ All Inclusive</p>
+                    <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Child Under 11 Years Stay Free</p>
+                    <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LUX* Me Spa</p>
                   </div>
                   <div class="card2">
-                    <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Luxurious 5-Star Hotel</p>
-                    <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Banyan An Adult Only Zone</p>
+                    <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Luxurious 5-Star Hotel</p>
+                    <p>
+                    <img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Banyan An Adult Only Zone</p>
                   </div>
                         
                 </div>
@@ -201,7 +203,7 @@
                     
                   <div class="card1">
                     <span >
-                      <img src="asset/icons/Group.png" alt="">
+                    <img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">
                     </span>
                     &nbsp;
                     &nbsp;
@@ -222,7 +224,7 @@
                           
                   </div>
                   <div class="card2">
-                    <p><img src="asset/icons/Vector.png" alt="">&nbsp;&nbsp; 10th March - 30th April 2020</p>
+                    <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Vector.png" alt="">&nbsp;&nbsp; 10th March - 30th April 2020</p>
                           
                   </div>
                         
@@ -246,26 +248,24 @@
                   <div class="activity1">
                     <h6>Purchase Inclusions</h6>
                     <div class="first">
-                      <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp; Room as per selection</p>
-                      <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp; Half Board or All Inclusive Meal Plan</p>
-                      <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp; Complimentary Land & Water activities</p>
-                      <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp; Child Under 11 years old stays free</p>
-                      <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp; Free Wi-Fi</p>
-                      <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp; Free Secure Parking</p>
-                          
-                          
+                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Room as per selection</p>
+                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Half Board or All Inclusive Meal Plan</p>
+                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Complimentary Land & Water activities</p>
+                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Child Under 11 years old stays free</p>
+                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Free Wi-Fi</p>
+                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Free Secure Parking</p>
                     </div>
   
                   </div>
                   <div class="activity2">
                     <h6>Complimentary Land Based Activities</h6>
                     <div class="first">
-                      <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp; Gym</p>
-                      <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp; Beach Volley</p>
-                      <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp; Table tennis</p>
-                      <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp; Soccer balls</p>
-                      <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp; Yoga</p>
-                      <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp; Unlimited access to driving range</p>
+                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Gym</p>
+                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Beach Volley</p>
+                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Table tennis</p>
+                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Soccer balls</p>
+                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Yoga</p>
+                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Unlimited access to driving range</p>
                           
                           
                     </div>
@@ -274,12 +274,12 @@
                   <div class="activity3">
                     <h6>Complimentary Water Based Activities</h6>
                     <div class="first">
-                      <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp; Water skiing</p>
-                      <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp; Windsurfing</p>
-                      <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp; Pedal boats</p>
-                      <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp; Kayaking</p>
-                      <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp; Aqua Gym</p>
-                      <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp; Glass bottom boat trips</p>
+                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Water skiing</p>
+                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Windsurfing</p>
+                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Pedal boats</p>
+                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Kayaking</p>
+                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Aqua Gym</p>
+                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Glass bottom boat trips</p>
                           
                           
                     </div>
@@ -291,8 +291,8 @@
                   <div class="activity4">
                     <h6>Meal Plan Available</h6>
                     <div class="first">
-                      <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp; Half Board</p>
-                      <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp; All Inclusive</p>
+                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Half Board</p>
+                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; All Inclusive</p>
                           
                           
                           
@@ -301,8 +301,8 @@
                   <div class="activity5">
                     <h6>Entertainment</h6>
                     <div class="first">
-                      <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp; Live music</p>
-                      <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp; DJ & Mauritian Dance Show</p>
+                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Live music</p>
+                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; DJ & Mauritian Dance Show</p>
                           
                           
                           
@@ -311,8 +311,8 @@
                   <div class="activity6">
                     <h6>Check In & Check Out</h6>
                     <div class="first">
-                      <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp; Check In Time 14:00</p>
-                      <p><img src="asset/icons/Group.png" alt="">&nbsp;&nbsp; Check Out Time 11:00</p>
+                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Check In Time 14:00</p>
+                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Check Out Time 11:00</p>
                           
                           
                           
@@ -351,17 +351,16 @@
             <div class="advisor-style">
               <div class="style-wrapper">
                 <span>
-
-                  <img src="asset/images/Stars.png" alt="">
+                  <img src="wp-content/themes/hotel-booking-freebie/asset/images/Stars.png" alt="">
   
                   <h4>Hotel Blue Haven</h4>
 
                   <p>Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. Ipsum est fugiat velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est fugiat velit ea ullamco do</p>
 
                   <span class="person-room">
-                    <p><img src="asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
-                    <p><img src="asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;2 x Guests</p>
-                    <p><img src="asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;1 x Room</p>
+                    <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
+                    <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;2 x Guests</p>
+                    <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;1 x Room</p>
                   </span>
 
                       
@@ -396,9 +395,9 @@
                       <h4>LUX* Belle Mare</h4>
 
                       <span class="person-room">
-                        <p><img src="asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
-                        <p><img src="asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;2 x Guests</p>
-                        <p><img src="asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;1 x Room</p>
+                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
+                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;2 x Guests</p>
+                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;1 x Room</p>
                       </span>
 
                       
@@ -421,7 +420,7 @@
               <!---->
               <div class="wrapp3">
                 <div class="wrapp3-image">
-                  <img src="asset/images/Rectangle21.png" alt="">
+                  <img src="wp-content/themes/hotel-booking-freebie/asset/images/Rectangle21.png" alt="">
                   <span>
                     <p>Flash Offer</p>
                   </span>
@@ -435,9 +434,9 @@
                       <h4>White Palace</h4>
 
                       <span class="person-room">
-                        <p><img src="asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
-                        <p><img src="asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;2 x Guests</p>
-                        <p><img src="asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;1 x Room</p>
+                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
+                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;2 x Guests</p>
+                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;1 x Room</p>
                       </span>
 
                       
@@ -460,7 +459,7 @@
               <!---->
               <div class="wrapp4">
                 <div class="wrapp4-image">
-                  <img src="asset/images/Rectangle21.png" alt="">
+                  <img src="wp-content/themes/hotel-booking-freebie/asset/images/Rectangle21.png" alt="">
                   <span>
                     <p>Flash Offer</p>
                   </span>
@@ -474,9 +473,9 @@
                       <h4>Luxury Place</h4>
 
                       <span class="person-room">
-                        <p><img src="asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
-                        <p><img src="asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;2 x Guests</p>
-                        <p><img src="asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;1 x Room</p>
+                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
+                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;2 x Guests</p>
+                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;1 x Room</p>
                       </span>
 
                       
@@ -499,7 +498,7 @@
               <!---->
               <div class="wrapp5">
                 <div class="wrapp5-image">
-                  <img src="asset/images/Rectangle21.png" alt="">
+                  <img src="wp-content/themes/hotel-booking-freebie/asset/images/Rectangle21.png" alt="">
                   <span>
                     <p>Flash Offer</p>
                   </span>
@@ -513,9 +512,9 @@
                       <h4>Hotel Five Star</h4>
 
                       <span class="person-room">
-                        <p><img src="asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
-                        <p><img src="asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;2 x Guests</p>
-                        <p><img src="asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;1 x Room</p>
+                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
+                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;2 x Guests</p>
+                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;1 x Room</p>
                       </span>
 
                       
@@ -553,29 +552,26 @@
         </span>
 
         <div class="guest-card-style">
-          <span><img src="asset/icons/chevron-left.png" alt=""></span>
+          <span><img src="wp-content/themes/hotel-booking-freebie/asset/icons/chevron-left.png" alt=""></span>
           <div class="holder">
             <div class="wrapp-review">
               <div class="Ellipse-container">
-                    
-                <img src="asset/images/Ellipse3.png" alt="">
+                <img src="wp-content/themes/hotel-booking-freebie/asset/images/Ellipse3.png" alt="">
                 <p>Megan Fox</p>
                 <p>Stayed 18 Nov, 2019</p>
-                <img src="asset/images/Stars.png" alt="">
-
-                    
+                <img src="wp-content/themes/hotel-booking-freebie/asset/images/Stars.png" alt="">
               </div>
               <div class="review-paragraph">
-                <img src="asset/images/Vector.png" alt="">
+                <img src="wp-content/themes/hotel-booking-freebie/asset/images/Vector.png" alt="">
                 <p>It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend.
                       
-                </p>
-                <img src="asset/images/Vector2.png" alt="">
+                </p>   
+                <img src="wp-content/themes/hotel-booking-freebie/asset/images/Vector2.png" alt="">
               </div>
 
             </div>
           </div>
-          <span><img src="asset/icons/chevron-right.png" alt=""></span>
+          <span><img src="wp-content/themes/hotel-booking-freebie/asset/icons/chevron-right.png" alt=""></span>
         </div>
 
       </div>
