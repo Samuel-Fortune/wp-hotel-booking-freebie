@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*!
 Theme Name: Hotel booking freebie
 Theme URI: http://underscores.me/
@@ -22,19 +23,22 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Custom
-	- Base
-	- Layout
-	- Module
-	- State
+  - Base
+  - Layout
+  - Module
+  - State
 
 --------------------------------------------------------------*/
+
 /*--------------------------------------------------------------
 # Custom Style
 --------------------------------------------------------------*/
+
 /* Import Custom Styles
 --------------------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap");
@@ -104,13 +108,16 @@ li a {
 .flex {
   display: flex;
 }
+
 .flex.justify-between {
   justify-content: space-between;
   width: 100%;
 }
+
 .flex.item-center {
   align-items: center;
 }
+
 .flex.gap {
   gap: 18px;
 }
@@ -168,6 +175,7 @@ $breakpoint arguments choices:
   line-height: 13px;
   width: 100%;
 }
+
 .nav-bg .nav-top {
   display: flex;
   width: 100%;
@@ -177,36 +185,43 @@ $breakpoint arguments choices:
   color: #333;
   font-style: normal;
 }
+
 .nav-bg .nav-enquiry {
   display: flex;
   justify-content: space-between;
 }
+
 .nav-bg .nav-enquiry p {
   font-size: 10px;
   font-style: normal;
   font-weight: 700;
 }
+
 .nav-bg .nav-btp-loyalty {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
 }
+
 .nav-bg .nav-btp {
   display: flex;
   gap: 20px;
   align-items: center;
 }
+
 .nav-bg .nav-btp p {
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
 }
+
 .nav-bg .nav-loyalty {
   display: flex;
   gap: 20px;
   align-items: center;
 }
+
 .nav-bg .nav-loyalty p {
   font-size: 10px;
   font-weight: 400;
@@ -219,17 +234,20 @@ $breakpoint arguments choices:
   width: 100%;
   background-color: #fff;
 }
+
 .nav-main .best-tour-plan {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .nav-main .logo-search {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 108px;
 }
+
 .nav-main .search-input {
   width: 350px;
   height: 40px;
@@ -239,6 +257,7 @@ $breakpoint arguments choices:
   border-radius: 6px;
   border: none;
 }
+
 .nav-main .search-button {
   border: none;
   cursor: pointer;
@@ -246,11 +265,13 @@ $breakpoint arguments choices:
   height: 40px;
   padding: 0;
 }
+
 .nav-main .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .nav-main .menu .profile {
   display: flex;
   padding-left: 20px;
@@ -260,72 +281,88 @@ $breakpoint arguments choices:
 .nav-bottom {
   background-color: #0a223d;
   margin-top: 3px;
+
   /*
   @if $breakpoint ==xl {
 
-  	@media only screen and (miin-width: 80em) {
-  		@content;
-  	}
+	@media only screen and (miin-width: 80em) {
+	  @content;
+	}
 
-  	//1280px
+	//1280px
   }
 
   @if $breakpoint ==2xl {
-  	@media only screen and (max-width: 96em) {
-  		@content;
-  	}
+	@media only screen and (max-width: 96em) {
+	  @content;
+	}
 
-  	//1536px
+	//1536px
   }
   */
 }
+
 .nav-bottom .nav-buttom-list {
   display: flex;
   width: 100%;
 }
+
 .nav-bottom .nav-buttom-list .list-menu {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
 }
+
 .nav-bottom .nav-buttom-list .list-menu li {
   display: flex;
 }
+
 .nav-bottom .nav-buttom-list .list-menu li a {
   font-family: Mulish;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
+
   /* identical to box height */
   text-transform: uppercase;
 }
+
 @media only screen and (min-width: 48em) {
+
   .nav-bottom .menu-toggle {
-    display: none;
+	display: none;
   }
 }
 
 .bread-crumb {
   width: 100%;
+
   /* Style the list */
+
   /* Display list items side by side */
+
   /* Add a slash symbol (/) before/behind each list item */
+
   /* Add a color to all links inside the list */
 }
+
 .bread-crumb ul.breadcrumb, .bread-crumb li.breadcrumb {
   line-height: 13px !important;
   cursor: pointer;
 }
+
 .bread-crumb ul.breadcrumb li, .bread-crumb li.breadcrumb li {
   display: inline;
   font-size: 10px !important;
 }
+
 .bread-crumb ul.breadcrumb li + li::before, .bread-crumb li.breadcrumb li + li::before {
   color: #0a223d !important;
   content: "/ ";
 }
+
 .bread-crumb ul.breadcrumb li a, .bread-crumb li.breadcrumb li a {
   color: #0a223d !important;
   text-decoration: none;
@@ -337,6 +374,7 @@ $breakpoint arguments choices:
 .hotel-wrapper {
   background-color: #f5fafe;
 }
+
 .hotel-wrapper .hotel-name {
   display: flex;
   justify-content: space-between;
@@ -345,16 +383,19 @@ $breakpoint arguments choices:
   margin-bottom: 8px;
   margin-top: 40px;
 }
+
 .hotel-wrapper .stars {
   width: 100%;
   display: flex;
   margin-bottom: 4px;
 }
+
 .hotel-wrapper .hilton-section {
   display: flex;
   gap: 20px;
   align-items: center;
 }
+
 .hotel-wrapper .hilton-section h3 {
   font-size: 24px;
   font-weight: 700;
@@ -362,6 +403,7 @@ $breakpoint arguments choices:
   color: #333;
   margin: 0;
 }
+
 .hotel-wrapper .hilton-section span {
   width: 70px;
   height: 20px;
@@ -371,6 +413,7 @@ $breakpoint arguments choices:
   justify-content: center;
   border-radius: 3px;
 }
+
 .hotel-wrapper .hilton-section span p {
   font-weight: 600;
   font-size: 10px;
@@ -379,11 +422,13 @@ $breakpoint arguments choices:
   display: flex;
   align-items: center;
 }
+
 .hotel-wrapper .half-board {
   width: 100%;
   color: #333;
   display: block;
 }
+
 .hotel-wrapper .half-board p {
   font-weight: 400;
   font-style: normal;
@@ -392,6 +437,7 @@ $breakpoint arguments choices:
   color: #333;
   margin-top: 2px;
 }
+
 .hotel-wrapper .user-rating {
   display: flex;
   flex-direction: column;
@@ -402,6 +448,7 @@ $breakpoint arguments choices:
   border-radius: 4px;
   margin-bottom: 14px;
 }
+
 .hotel-wrapper .user-rating .user {
   font-style: normal;
   font-size: 8px;
@@ -409,6 +456,7 @@ $breakpoint arguments choices:
   line-height: 10px;
   color: #fff;
 }
+
 .hotel-wrapper .user-rating .user p {
   font-family: Mulish;
   font-style: normal;
@@ -416,6 +464,7 @@ $breakpoint arguments choices:
   font-size: 8px;
   line-height: 10px;
 }
+
 .hotel-wrapper .user-rating .user .rate {
   width: 100%;
   height: 18px;
@@ -423,6 +472,7 @@ $breakpoint arguments choices:
   align-items: center;
   justify-content: center;
 }
+
 .hotel-wrapper .user-rating .user .rate p {
   font-family: Mulish;
   font-style: normal;
@@ -431,20 +481,24 @@ $breakpoint arguments choices:
   line-height: 18px;
   margin-top: 3px;
 }
+
 .hotel-wrapper .slider {
   display: flex;
   justify-content: space-between;
   width: 100%;
   flex-direction: row;
 }
+
 .hotel-wrapper .slider .beach {
   background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
   border-radius: 8px;
   width: 64%;
 }
+
 .hotel-wrapper .slider .beach img {
   width: 100%;
 }
+
 .hotel-wrapper .view-options {
   background-color: #0a223d;
   width: 100%;
@@ -452,6 +506,7 @@ $breakpoint arguments choices:
   border-radius: 8px;
   display: flex;
 }
+
 .hotel-wrapper .view-options .price-room {
   display: flex;
   flex-direction: row;
@@ -459,9 +514,11 @@ $breakpoint arguments choices:
   width: 100%;
   align-items: center;
 }
+
 .hotel-wrapper .view-options .price-room .price {
   color: #fff;
 }
+
 .hotel-wrapper .view-options .price-room .price p {
   margin: 0 !important;
   font-family: Nunito;
@@ -470,17 +527,20 @@ $breakpoint arguments choices:
   font-size: 10px;
   line-height: 14px;
 }
+
 .hotel-wrapper .view-options .price-room .price strong {
   font-family: Nunito;
   font-size: 24px;
   font-weight: 800;
   line-height: 33px;
 }
+
 .hotel-wrapper .view-options .price-room .room {
   color: #fff;
   display: flex;
   flex-direction: column;
 }
+
 .hotel-wrapper .view-options .price-room .room span p {
   font-family: Nunito;
   font-style: normal;
@@ -490,6 +550,7 @@ $breakpoint arguments choices:
   display: flex;
   align-items: center;
 }
+
 .hotel-wrapper .view-options .booking {
   display: flex;
   justify-content: space-between;
@@ -499,6 +560,7 @@ $breakpoint arguments choices:
   align-items: center;
   padding-top: 10px;
 }
+
 .hotel-wrapper .view-options .booking h4 {
   font-family: Nunito;
   font-weight: 600;
@@ -506,6 +568,7 @@ $breakpoint arguments choices:
   font-style: normal;
   line-height: 25px;
 }
+
 .hotel-wrapper .view-options .booking span p {
   font-family: Nunito;
   font-style: normal;
@@ -516,10 +579,12 @@ $breakpoint arguments choices:
   justify-content: flex-end;
   align-items: center;
 }
+
 .hotel-wrapper .view-options .booking span p img {
   width: 13.31px;
   height: 13.42px;
 }
+
 .hotel-wrapper .view-options .view-other-options {
   background-color: #ec1f46;
   border-radius: 4px;
@@ -529,6 +594,7 @@ $breakpoint arguments choices:
   align-items: center;
   margin-top: 17px;
 }
+
 .hotel-wrapper .view-options .view-other-options p a {
   color: #fff;
   font-family: Nunito;
@@ -547,19 +613,23 @@ $breakpoint arguments choices:
   margin-top: 40px;
   margin-bottom: 60px;
 }
+
 .package-section .package-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .package-section .package-container .package-menu {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
+
 .package-section .package-container .package-menu p:first-of-type {
   color: #ec1f46 !important;
 }
+
 .package-section .package-container .package-menu p:first-of-type a:first-of-type {
   color: #ec1f46 !important;
   border-bottom: 3px solid;
@@ -567,6 +637,7 @@ $breakpoint arguments choices:
   height: 30px;
   display: flex;
 }
+
 .package-section .package-container .package-menu p {
   color: #333;
   font-family: Mulish;
@@ -576,6 +647,7 @@ $breakpoint arguments choices:
   line-height: 18px;
   height: 30px;
 }
+
 .package-section .package-container .package-summery {
   width: 100%;
   display: flex;
@@ -583,20 +655,24 @@ $breakpoint arguments choices:
   justify-content: space-between;
   gap: 36px;
 }
+
 .package-section .package-container .package-summery h3 {
   margin-bottom: 0;
   margin-top: 30px;
 }
+
 .package-section .package-container .package-summery .package-offer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
 }
+
 .package-section .package-container .package-summery .package-offer .package-card1 {
   width: 49%;
   background-color: #fff;
 }
+
 .package-section .package-container .package-summery .package-offer .package-card1 .highlight-header {
   background-color: #0a223d;
   width: 100%;
@@ -605,6 +681,7 @@ $breakpoint arguments choices:
   border-radius: 4px 4 0 0;
   align-items: center;
 }
+
 .package-section .package-container .package-summery .package-offer .package-card1 .highlight-header h5 {
   margin-left: 20px;
   font-family: Mulish;
@@ -613,6 +690,7 @@ $breakpoint arguments choices:
   font-size: 14px;
   line-height: 18px;
 }
+
 .package-section .package-container .package-summery .package-offer .package-card1 .card-highlight, .package-section .package-container .package-summery .package-offer .package-card1 .package-card-details-large .card-head .card-Details, .package-card-details-large .card-head .package-section .package-container .package-summery .package-offer .package-card1 .card-Details, .package-section .package-container .package-summery .package-offer .package-card1 .package-card-details-normal .card-head .card-Details, .package-card-details-normal .card-head .package-section .package-container .package-summery .package-offer .package-card1 .card-Details, .package-section .package-container .package-summery .package-offer .package-card1 .package-card-details .card-head .card-Details, .package-section .package-container .package-summery .package-card-details .card-head .package-offer .package-card1 .card-Details {
   display: flex;
   justify-content: space-between;
@@ -622,6 +700,7 @@ $breakpoint arguments choices:
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 .package-section .package-container .package-summery .package-offer .package-card1 .card-highlight .card1 p, .package-section .package-container .package-summery .package-offer .package-card1 .package-card-details-large .card-head .card-Details .card1 p, .package-card-details-large .card-head .package-section .package-container .package-summery .package-offer .package-card1 .card-Details .card1 p, .package-section .package-container .package-summery .package-offer .package-card1 .package-card-details-normal .card-head .card-Details .card1 p, .package-card-details-normal .card-head .package-section .package-container .package-summery .package-offer .package-card1 .card-Details .card1 p, .package-section .package-container .package-summery .package-offer .package-card1 .package-card-details .card-head .card-Details .card1 p, .package-section .package-container .package-summery .package-card-details .card-head .package-offer .package-card1 .card-Details .card1 p,
 .package-section .package-container .package-summery .package-offer .package-card1 .card-highlight .card2 p,
 .package-section .package-container .package-summery .package-offer .package-card1 .package-card-details-large .card-head .card-Details .card2 p,
@@ -639,10 +718,12 @@ $breakpoint arguments choices:
   line-height: 15px;
   color: #333;
 }
+
 .package-section .package-container .package-summery .package-offer .package-card2 {
   width: 49%;
   background-color: #fff;
 }
+
 .package-section .package-container .package-summery .package-offer .package-card2 .details-header,
 .package-section .package-container .package-summery .package-offer .package-card2 .card-head {
   background-color: #0a223d;
@@ -652,6 +733,7 @@ $breakpoint arguments choices:
   border-radius: 4px 4px 0 0;
   align-items: center;
 }
+
 .package-section .package-container .package-summery .package-offer .package-card2 .details-header h5,
 .package-section .package-container .package-summery .package-offer .package-card2 .card-head h5 {
   margin-left: 20px;
@@ -661,6 +743,7 @@ $breakpoint arguments choices:
   font-size: 14px;
   line-height: 18px;
 }
+
 .package-section .package-container .package-summery .package-offer .package-card2 .card-Details {
   display: flex;
   justify-content: space-between;
@@ -669,10 +752,12 @@ $breakpoint arguments choices:
   padding-bottom: 20px;
   padding-bottom: 0 !important;
 }
+
 .package-section .package-container .package-summery .package-offer .package-card2 .card-Details .card1 {
   display: flex;
   justify-content: center;
 }
+
 .package-section .package-container .package-summery .package-offer .package-card2 .card-Details .card1 .design {
   display: flex;
   flex-direction: column;
@@ -680,6 +765,7 @@ $breakpoint arguments choices:
   width: 168px;
   justify-content: space-between;
 }
+
 .package-section .package-container .package-summery .package-offer .package-card2 .card-Details .card1 .design p {
   margin: 0;
   font-family: Mulish;
@@ -687,11 +773,13 @@ $breakpoint arguments choices:
   font-weight: 400;
   line-height: 15px;
 }
+
 .package-section .package-container .package-summery .package-offer .package-card2 .card-Details .card2 {
   display: flex;
   width: 46%;
   height: 18px;
 }
+
 .package-section .package-container .package-summery .package-offer .package-card2 .card-Details .card2 p {
   margin-top: 0;
   font-family: Mulish;
@@ -702,12 +790,14 @@ $breakpoint arguments choices:
   display: flex;
   align-items: center;
 }
+
 .package-section .package-container .package-summery .package-card-details {
   width: 100%;
   background-color: #fff;
   height: 34rem;
   padding-bottom: 24px;
 }
+
 .package-section .package-container .package-summery .package-card-details .card-head {
   background-color: #0a223d;
   width: 100%;
@@ -716,6 +806,7 @@ $breakpoint arguments choices:
   border-radius: 4px 4px 0 0;
   align-items: center;
 }
+
 .package-section .package-container .package-summery .package-card-details .card-head h5 {
   margin-left: 20px;
   font-family: Mulish;
@@ -724,13 +815,16 @@ $breakpoint arguments choices:
   font-size: 14px;
   line-height: 18px;
 }
+
 .package-section .package-container .package-summery .package-card-details .card-head .card-Details {
   padding-bottom: 0 !important;
 }
+
 .package-section .package-container .package-summery .package-card-details .card-head .card-Details .card1 {
   display: flex;
   justify-content: center;
 }
+
 .package-section .package-container .package-summery .package-card-details .card-head .card-Details .card1 .design {
   display: flex;
   flex-direction: column;
@@ -738,14 +832,17 @@ $breakpoint arguments choices:
   width: 168px;
   justify-content: space-between;
 }
+
 .package-section .package-container .package-summery .package-card-details .card-head .card-Details .card1 .design p {
   margin: 0;
 }
+
 .package-section .package-container .package-summery .package-card-details .card-head .card-Details .card2 {
   display: flex;
   width: 46%;
   height: 20px;
 }
+
 .package-section .package-container .package-summery .package-card-details .card-head .card-Details .card2 p {
   width: 216px;
   font-family: Mulish;
@@ -753,6 +850,7 @@ $breakpoint arguments choices:
   font-size: 14px;
   line-height: 18px;
 }
+
 .package-section .package-container .package-summery .package-card-details .summary-details {
   display: flex;
   justify-content: space-between;
@@ -762,20 +860,24 @@ $breakpoint arguments choices:
   padding-left: 20px;
   padding-right: 60px;
 }
+
 .package-section .package-container .package-summery .package-card-details .summary-details .first-three {
   display: flex;
   justify-content: space-between;
   height: 314px;
   border-bottom: 1px dashed #e0e0e0;
 }
+
 .package-section .package-container .package-summery .package-card-details .summary-details .last-three {
   display: flex;
   justify-content: space-between;
   height: 165px;
 }
+
 .package-section .package-container .package-summery .package-card-details .summary-details .activity1 {
   height: 300px;
 }
+
 .package-section .package-container .package-summery .package-card-details .summary-details .activity1 h6 {
   color: #ec1f46;
   width: 122px;
@@ -786,10 +888,12 @@ $breakpoint arguments choices:
   line-height: 16px;
   margin-bottom: 0;
 }
+
 .package-section .package-container .package-summery .package-card-details .summary-details .activity1 .first {
   display: flex;
   flex-direction: column;
 }
+
 .package-section .package-container .package-summery .package-card-details .summary-details .activity1 .first p {
   align-items: center;
   display: flex;
@@ -797,9 +901,11 @@ $breakpoint arguments choices:
   font-style: normal;
   line-height: 15px;
 }
+
 .package-section .package-container .package-summery .package-card-details .summary-details .activity2 {
   height: 238px;
 }
+
 .package-section .package-container .package-summery .package-card-details .summary-details .activity2 h6 {
   color: #ec1f46;
   width: 240px;
@@ -810,10 +916,12 @@ $breakpoint arguments choices:
   line-height: 16px;
   margin-bottom: 0;
 }
+
 .package-section .package-container .package-summery .package-card-details .summary-details .activity2 .first {
   display: flex;
   flex-direction: column;
 }
+
 .package-section .package-container .package-summery .package-card-details .summary-details .activity2 .first p {
   align-items: center;
   display: flex;
@@ -821,9 +929,11 @@ $breakpoint arguments choices:
   font-style: normal;
   line-height: 15px;
 }
+
 .package-section .package-container .package-summery .package-card-details .summary-details .activity3 {
   height: 233px;
 }
+
 .package-section .package-container .package-summery .package-card-details .summary-details .activity3 h6 {
   color: #ec1f46;
   width: 240px;
@@ -834,10 +944,12 @@ $breakpoint arguments choices:
   line-height: 16px;
   margin-bottom: 0;
 }
+
 .package-section .package-container .package-summery .package-card-details .summary-details .activity3 .first {
   display: flex;
   flex-direction: column;
 }
+
 .package-section .package-container .package-summery .package-card-details .summary-details .activity3 .first p {
   align-items: center;
   display: flex;
@@ -845,10 +957,12 @@ $breakpoint arguments choices:
   font-style: normal;
   line-height: 15px;
 }
+
 .package-section .package-container .package-summery .package-card-details .summary-details .activity4 {
   height: 90px;
   width: 192px;
 }
+
 .package-section .package-container .package-summery .package-card-details .summary-details .activity4 h6 {
   color: #ec1f46;
   width: 122px;
@@ -859,6 +973,7 @@ $breakpoint arguments choices:
   line-height: 16px;
   margin-bottom: 0;
 }
+
 .package-section .package-container .package-summery .package-card-details .summary-details .activity4 .first {
   display: flex;
   flex-direction: column;
@@ -2025,7 +2140,7 @@ $breakpoint arguments choices:
   max-width: 136px;
   height: auto;
   -o-object-fit: contain;
-     object-fit: contain;
+	 object-fit: contain;
 }
 
 .menu-normal {
@@ -2036,19 +2151,19 @@ $breakpoint arguments choices:
   /*
   @if $breakpoint ==xl {
 
-  	@media only screen and (miin-width: 80em) {
-  		@content;
-  	}
+	@media only screen and (miin-width: 80em) {
+	  @content;
+	}
 
-  	//1280px
+	//1280px
   }
 
   @if $breakpoint ==2xl {
-  	@media only screen and (max-width: 96em) {
-  		@content;
-  	}
+	@media only screen and (max-width: 96em) {
+	  @content;
+	}
 
-  	//1536px
+	//1536px
   }
   */
 }
@@ -2066,19 +2181,19 @@ $breakpoint arguments choices:
   /*
   @if $breakpoint ==xl {
 
-  	@media only screen and (miin-width: 80em) {
-  		@content;
-  	}
+	@media only screen and (miin-width: 80em) {
+	  @content;
+	}
 
-  	//1280px
+	//1280px
   }
 
   @if $breakpoint ==2xl {
-  	@media only screen and (max-width: 96em) {
-  		@content;
-  	}
+	@media only screen and (max-width: 96em) {
+	  @content;
+	}
 
-  	//1536px
+	//1536px
   }
   */
 }
@@ -2089,19 +2204,19 @@ $breakpoint arguments choices:
   /*
   @if $breakpoint ==xl {
 
-  	@media only screen and (miin-width: 80em) {
-  		@content;
-  	}
+	@media only screen and (miin-width: 80em) {
+	  @content;
+	}
 
-  	//1280px
+	//1280px
   }
 
   @if $breakpoint ==2xl {
-  	@media only screen and (max-width: 96em) {
-  		@content;
-  	}
+	@media only screen and (max-width: 96em) {
+	  @content;
+	}
 
-  	//1536px
+	//1536px
   }
   */
 }
@@ -2114,19 +2229,19 @@ $breakpoint arguments choices:
   /*
   @if $breakpoint ==xl {
 
-  	@media only screen and (miin-width: 80em) {
-  		@content;
-  	}
+	@media only screen and (miin-width: 80em) {
+	  @content;
+	}
 
-  	//1280px
+	//1280px
   }
 
   @if $breakpoint ==2xl {
-  	@media only screen and (max-width: 96em) {
-  		@content;
-  	}
+	@media only screen and (max-width: 96em) {
+	  @content;
+	}
 
-  	//1536px
+	//1536px
   }
   */
 }
@@ -2169,19 +2284,19 @@ $breakpoint arguments choices:
   /*
   @if $breakpoint ==xl {
 
-  	@media only screen and (miin-width: 80em) {
-  		@content;
-  	}
+	@media only screen and (miin-width: 80em) {
+	  @content;
+	}
 
-  	//1280px
+	//1280px
   }
 
   @if $breakpoint ==2xl {
-  	@media only screen and (max-width: 96em) {
-  		@content;
-  	}
+	@media only screen and (max-width: 96em) {
+	  @content;
+	}
 
-  	//1536px
+	//1536px
   }
   */
 }
@@ -2196,19 +2311,19 @@ $breakpoint arguments choices:
   /*
   @if $breakpoint ==xl {
 
-  	@media only screen and (miin-width: 80em) {
-  		@content;
-  	}
+	@media only screen and (miin-width: 80em) {
+	  @content;
+	}
 
-  	//1280px
+	//1280px
   }
 
   @if $breakpoint ==2xl {
-  	@media only screen and (max-width: 96em) {
-  		@content;
-  	}
+	@media only screen and (max-width: 96em) {
+	  @content;
+	}
 
-  	//1536px
+	//1536px
   }
   */
 }
@@ -2222,19 +2337,19 @@ $breakpoint arguments choices:
   /*
   @if $breakpoint ==xl {
 
-  	@media only screen and (miin-width: 80em) {
-  		@content;
-  	}
+	@media only screen and (miin-width: 80em) {
+	  @content;
+	}
 
-  	//1280px
+	//1280px
   }
 
   @if $breakpoint ==2xl {
-  	@media only screen and (max-width: 96em) {
-  		@content;
-  	}
+	@media only screen and (max-width: 96em) {
+	  @content;
+	}
 
-  	//1536px
+	//1536px
   }
   */
 }
@@ -2247,19 +2362,19 @@ $breakpoint arguments choices:
   /*
   @if $breakpoint ==xl {
 
-  	@media only screen and (miin-width: 80em) {
-  		@content;
-  	}
+	@media only screen and (miin-width: 80em) {
+	  @content;
+	}
 
-  	//1280px
+	//1280px
   }
 
   @if $breakpoint ==2xl {
-  	@media only screen and (max-width: 96em) {
-  		@content;
-  	}
+	@media only screen and (max-width: 96em) {
+	  @content;
+	}
 
-  	//1536px
+	//1536px
   }
   */
 }
@@ -2269,19 +2384,19 @@ $breakpoint arguments choices:
   /*
   @if $breakpoint ==xl {
 
-  	@media only screen and (miin-width: 80em) {
-  		@content;
-  	}
+	@media only screen and (miin-width: 80em) {
+	  @content;
+	}
 
-  	//1280px
+	//1280px
   }
 
   @if $breakpoint ==2xl {
-  	@media only screen and (max-width: 96em) {
-  		@content;
-  	}
+	@media only screen and (max-width: 96em) {
+	  @content;
+	}
 
-  	//1536px
+	//1536px
   }
   */
 }
@@ -2311,19 +2426,19 @@ $breakpoint arguments choices:
   /*
   @if $breakpoint ==xl {
 
-  	@media only screen and (miin-width: 80em) {
-  		@content;
-  	}
+	@media only screen and (miin-width: 80em) {
+	  @content;
+	}
 
-  	//1280px
+	//1280px
   }
 
   @if $breakpoint ==2xl {
-  	@media only screen and (max-width: 96em) {
-  		@content;
-  	}
+	@media only screen and (max-width: 96em) {
+	  @content;
+	}
 
-  	//1536px
+	//1536px
   }
   */
 }
@@ -2350,19 +2465,19 @@ $breakpoint arguments choices:
   /*
   @if $breakpoint ==xl {
 
-  	@media only screen and (miin-width: 80em) {
-  		@content;
-  	}
+	@media only screen and (miin-width: 80em) {
+	  @content;
+	}
 
-  	//1280px
+	//1280px
   }
 
   @if $breakpoint ==2xl {
-  	@media only screen and (max-width: 96em) {
-  		@content;
-  	}
+	@media only screen and (max-width: 96em) {
+	  @content;
+	}
 
-  	//1536px
+	//1536px
   }
   */
 }
@@ -2482,19 +2597,19 @@ $breakpoint arguments choices:
   /*
   @if $breakpoint ==xl {
 
-  	@media only screen and (miin-width: 80em) {
-  		@content;
-  	}
+	@media only screen and (miin-width: 80em) {
+	  @content;
+	}
 
-  	//1280px
+	//1280px
   }
 
   @if $breakpoint ==2xl {
-  	@media only screen and (max-width: 96em) {
-  		@content;
-  	}
+	@media only screen and (max-width: 96em) {
+	  @content;
+	}
 
-  	//1536px
+	//1536px
   }
   */
 }
@@ -2525,19 +2640,19 @@ $breakpoint arguments choices:
   /*
   @if $breakpoint ==xl {
 
-  	@media only screen and (miin-width: 80em) {
-  		@content;
-  	}
+	@media only screen and (miin-width: 80em) {
+	  @content;
+	}
 
-  	//1280px
+	//1280px
   }
 
   @if $breakpoint ==2xl {
-  	@media only screen and (max-width: 96em) {
-  		@content;
-  	}
+	@media only screen and (max-width: 96em) {
+	  @content;
+	}
 
-  	//1536px
+	//1536px
   }
   */
 }
@@ -2569,19 +2684,19 @@ $breakpoint arguments choices:
   /*
   @if $breakpoint ==xl {
 
-  	@media only screen and (miin-width: 80em) {
-  		@content;
-  	}
+	@media only screen and (miin-width: 80em) {
+	  @content;
+	}
 
-  	//1280px
+	//1280px
   }
 
   @if $breakpoint ==2xl {
-  	@media only screen and (max-width: 96em) {
-  		@content;
-  	}
+	@media only screen and (max-width: 96em) {
+	  @content;
+	}
 
-  	//1536px
+	//1536px
   }
   */
 }
@@ -2702,19 +2817,19 @@ $breakpoint arguments choices:
   /*
   @if $breakpoint ==xl {
 
-  	@media only screen and (miin-width: 80em) {
-  		@content;
-  	}
+	@media only screen and (miin-width: 80em) {
+	  @content;
+	}
 
-  	//1280px
+	//1280px
   }
 
   @if $breakpoint ==2xl {
-  	@media only screen and (max-width: 96em) {
-  		@content;
-  	}
+	@media only screen and (max-width: 96em) {
+	  @content;
+	}
 
-  	//1536px
+	//1536px
   }
   */
 }
@@ -2834,19 +2949,19 @@ $breakpoint arguments choices:
   /*
   @if $breakpoint ==xl {
 
-  	@media only screen and (miin-width: 80em) {
-  		@content;
-  	}
+	@media only screen and (miin-width: 80em) {
+	  @content;
+	}
 
-  	//1280px
+	//1280px
   }
 
   @if $breakpoint ==2xl {
-  	@media only screen and (max-width: 96em) {
-  		@content;
-  	}
+	@media only screen and (max-width: 96em) {
+	  @content;
+	}
 
-  	//1536px
+	//1536px
   }
   */
 }
@@ -3079,19 +3194,19 @@ $breakpoint arguments choices:
   /*
   @if $breakpoint ==xl {
 
-  	@media only screen and (miin-width: 80em) {
-  		@content;
-  	}
+	@media only screen and (miin-width: 80em) {
+	  @content;
+	}
 
-  	//1280px
+	//1280px
   }
 
   @if $breakpoint ==2xl {
-  	@media only screen and (max-width: 96em) {
-  		@content;
-  	}
+	@media only screen and (max-width: 96em) {
+	  @content;
+	}
 
-  	//1536px
+	//1536px
   }
   */
 }
@@ -3335,19 +3450,19 @@ $breakpoint arguments choices:
   /*
   @if $breakpoint ==xl {
 
-  	@media only screen and (miin-width: 80em) {
-  		@content;
-  	}
+	@media only screen and (miin-width: 80em) {
+	  @content;
+	}
 
-  	//1280px
+	//1280px
   }
 
   @if $breakpoint ==2xl {
-  	@media only screen and (max-width: 96em) {
-  		@content;
-  	}
+	@media only screen and (max-width: 96em) {
+	  @content;
+	}
 
-  	//1536px
+	//1536px
   }
   */
 }
@@ -4329,19 +4444,19 @@ $breakpoint arguments choices:
   /*
   @if $breakpoint ==xl {
 
-  	@media only screen and (miin-width: 80em) {
-  		@content;
-  	}
+	@media only screen and (miin-width: 80em) {
+	  @content;
+	}
 
-  	//1280px
+	//1280px
   }
 
   @if $breakpoint ==2xl {
-  	@media only screen and (max-width: 96em) {
-  		@content;
-  	}
+	@media only screen and (max-width: 96em) {
+	  @content;
+	}
 
-  	//1536px
+	//1536px
   }
   */
 }
@@ -4453,19 +4568,19 @@ $breakpoint arguments choices:
   /*
   @if $breakpoint ==xl {
 
-  	@media only screen and (miin-width: 80em) {
-  		@content;
-  	}
+	@media only screen and (miin-width: 80em) {
+	  @content;
+	}
 
-  	//1280px
+	//1280px
   }
 
   @if $breakpoint ==2xl {
-  	@media only screen and (max-width: 96em) {
-  		@content;
-  	}
+	@media only screen and (max-width: 96em) {
+	  @content;
+	}
 
-  	//1536px
+	//1536px
   }
   */
 }
@@ -4584,19 +4699,19 @@ $breakpoint arguments choices:
   /*
   @if $breakpoint ==xl {
 
-  	@media only screen and (miin-width: 80em) {
-  		@content;
-  	}
+	@media only screen and (miin-width: 80em) {
+	  @content;
+	}
 
-  	//1280px
+	//1280px
   }
 
   @if $breakpoint ==2xl {
-  	@media only screen and (max-width: 96em) {
-  		@content;
-  	}
+	@media only screen and (max-width: 96em) {
+	  @content;
+	}
 
-  	//1536px
+	//1536px
   }
   */
 }
@@ -4723,19 +4838,19 @@ $breakpoint arguments choices:
   /*
   @if $breakpoint ==xl {
 
-  	@media only screen and (miin-width: 80em) {
-  		@content;
-  	}
+	@media only screen and (miin-width: 80em) {
+	  @content;
+	}
 
-  	//1280px
+	//1280px
   }
 
   @if $breakpoint ==2xl {
-  	@media only screen and (max-width: 96em) {
-  		@content;
-  	}
+	@media only screen and (max-width: 96em) {
+	  @content;
+	}
 
-  	//1536px
+	//1536px
   }
   */
 }
@@ -4811,19 +4926,19 @@ $breakpoint arguments choices:
   /*
   @if $breakpoint ==xl {
 
-  	@media only screen and (miin-width: 80em) {
-  		@content;
-  	}
+	@media only screen and (miin-width: 80em) {
+	  @content;
+	}
 
-  	//1280px
+	//1280px
   }
 
   @if $breakpoint ==2xl {
-  	@media only screen and (max-width: 96em) {
-  		@content;
-  	}
+	@media only screen and (max-width: 96em) {
+	  @content;
+	}
 
-  	//1536px
+	//1536px
   }
   */
 }
@@ -5003,19 +5118,19 @@ $breakpoint arguments choices:
   /*
   @if $breakpoint ==xl {
 
-  	@media only screen and (miin-width: 80em) {
-  		@content;
-  	}
+	@media only screen and (miin-width: 80em) {
+	  @content;
+	}
 
-  	//1280px
+	//1280px
   }
 
   @if $breakpoint ==2xl {
-  	@media only screen and (max-width: 96em) {
-  		@content;
-  	}
+	@media only screen and (max-width: 96em) {
+	  @content;
+	}
 
-  	//1536px
+	//1536px
   }
   */
 }
@@ -5195,19 +5310,19 @@ $breakpoint arguments choices:
   /*
   @if $breakpoint ==xl {
 
-  	@media only screen and (miin-width: 80em) {
-  		@content;
-  	}
+	@media only screen and (miin-width: 80em) {
+	  @content;
+	}
 
-  	//1280px
+	//1280px
   }
 
   @if $breakpoint ==2xl {
-  	@media only screen and (max-width: 96em) {
-  		@content;
-  	}
+	@media only screen and (max-width: 96em) {
+	  @content;
+	}
 
-  	//1536px
+	//1536px
   }
   */
 }
@@ -5388,7 +5503,7 @@ $breakpoint arguments choices:
   max-width: 136px;
   height: auto;
   -o-object-fit: contain;
-     object-fit: contain;
+	 object-fit: contain;
 }
 .footer-section-large {
   background-color: #0a223d;
@@ -5397,19 +5512,19 @@ $breakpoint arguments choices:
   /*
   @if $breakpoint ==xl {
 
-  	@media only screen and (miin-width: 80em) {
-  		@content;
-  	}
+	@media only screen and (miin-width: 80em) {
+	  @content;
+	}
 
-  	//1280px
+	//1280px
   }
 
   @if $breakpoint ==2xl {
-  	@media only screen and (max-width: 96em) {
-  		@content;
-  	}
+	@media only screen and (max-width: 96em) {
+	  @content;
+	}
 
-  	//1536px
+	//1536px
   }
   */
 }
@@ -5590,5 +5705,5 @@ $breakpoint arguments choices:
   max-width: 136px;
   height: auto;
   -o-object-fit: contain;
-     object-fit: contain;
+	 object-fit: contain;
 }/*# sourceMappingURL=style.css.map */
