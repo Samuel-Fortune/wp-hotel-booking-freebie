@@ -84,15 +84,15 @@ $post_id = get_the_ID();
                 <div class="room">
                   <span>
                     <p>
-                    <img src="wp-content/themes/hotel-booking-freebie/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp; <?php echo get_field('Number of Guests', $post_id); ?>x
+                    <img src="wp-content/themes/hotel-booking-freebie/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp; <?php echo get_field('number_of_guests', $post_id); ?>x
                       Guests
                     </p>
                     <p>
-                    <img src="wp-content/themes/hotel-booking-freebie/asset/icons/home.png" alt="">&nbsp; 
+                    <img src="wp-content/themes/hotel-booking-freebie/asset/icons/home.png" alt="">&nbsp;
                       &nbsp;
                       &nbsp;
-                      <?php echo get_field('Rooms', $post_id); ?>x Room
-                  
+                      <?php echo the_field('number_of_rooms', $post_id); ?>x Room
+
                     </p>
                   </span>
                 </div>
@@ -104,7 +104,7 @@ $post_id = get_the_ID();
                   <p>
                     <img src="wp-content/themes/hotel-booking-freebie/asset/icons/phone-call.png" alt="">
                     &nbsp;&nbsp;
-                    12100
+                    <?php echo the_field('contact', $post_id); ?>
                   </p>
                 </span>
               </div>
@@ -116,6 +116,7 @@ $post_id = get_the_ID();
           </div>
           <div class="mapouter">
             <div class="gmap_canvas map">
+            <?php echo the_field('hilton_map', $post_id); ?>
               <iframe
                 width="600"
                 height="213"
@@ -150,15 +151,13 @@ $post_id = get_the_ID();
     </div>
   </section>
 
-    <!--PACKAGE SECTION-->
-    <section class="package-section">
+  <!--PACKAGE SECTION-->
+  <section class="package-section">
     <div class="site-wrapper">
 
       <div class="package-container">
-            
+
         <div class="package-menu" id="package-menu">
-              
-  
           <p><a href="">Package Summary</a></p>
           <p><a href="">Hotel Information</a></p>
           <p><a href="">Rooms</a></p>
@@ -166,7 +165,7 @@ $post_id = get_the_ID();
           <p><a href="">Dining & Entertainment</a></p>
           <p><a href="">Reviews</a></l>
           <p><a href="">Questions & Answers</a></p>
-              
+
         </div>
 
         <div class="package-summery">
@@ -174,42 +173,42 @@ $post_id = get_the_ID();
           <h3>PACKAGE SUMMERY</h3>
           <div class="package-offer" id="package-offer">
             <div class="package-card1">
-                  
+
               <span class="highlight-header">
-  
+
                 <h5>Package Highlights</h5>
               </span>
               <div class="card-highlight-wrapper">
                 <div class="card-highlight">
-                    
+
                   <div class="card1">
-                    <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Half Board/ All Inclusive</p>
-                    <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Child Under 11 Years Stay Free</p>
-                    <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LUX* Me Spa</p>
+                    <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Half Board/ All Inclusive</p>
+                    <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Child Under 11 Years Stay Free</p>
+                    <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LUX* Me Spa</p>
                   </div>
                   <div class="card2">
-                    <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Luxurious 5-Star Hotel</p>
+                    <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Luxurious 5-Star Hotel</p>
                     <p>
-                    <img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Banyan An Adult Only Zone</p>
+                    <img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Banyan An Adult Only Zone</p>
                   </div>
-                        
+
                 </div>
 
               </div>
             </div>
-                
+
             <div class="package-card2">
-                  
+
               <span class="details-header">
-  
+
                 <h5>Offer Details</h5>
               </span>
               <div class="card-details-wrapper">
                 <div class="card-Details">
-                    
+
                   <div class="card1">
                     <span >
-                    <img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">
                     </span>
                     &nbsp;
                     &nbsp;
@@ -217,28 +216,27 @@ $post_id = get_the_ID();
                     <span class="design">
 
                       <p>Benefit from a special discounted CHILL’OUT OFFER at Grand Hilton Hotel.
-
                       </p>
 
-                            
+
                       <p>
 
                         * Valid until 30 April 2020
                       </p>
-                            
+
                     </span>
-                          
+
                   </div>
                   <div class="card2">
-                    <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Vector.png" alt="">&nbsp;&nbsp; 10th March - 30th April 2020</p>
-                          
+                    <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Vector.png" alt="">&nbsp;&nbsp; 10th March - 30th April 2020</p>
+
                   </div>
-                        
+
                 </div>
 
               </div>
             </div>
-                
+
           </div>
 
           <!---->
@@ -251,45 +249,54 @@ $post_id = get_the_ID();
               <div class="summary-details">
                 <div class="first-three">
 
-                  <div class="activity1">
-                    <h6>Purchase Inclusions</h6>
-                    <div class="first">
-                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Room as per selection</p>
-                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Half Board or All Inclusive Meal Plan</p>
-                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Complimentary Land & Water activities</p>
-                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Child Under 11 years old stays free</p>
-                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Free Wi-Fi</p>
-                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Free Secure Parking</p>
-                    </div>
-  
+                <?php $summary_details = get_field('package_summary_details', $post_id);
+
+                 $purchase_inclusions = $summary_details['inclusions'];
+
+                 $complimentary_land_activities = $summary_details['complimentary_land_activities'];
+
+                 $complimentary_water_activities = $summary_details['complimentary_water_activities'];
+
+                 $meal_plan_available = $summary_details['meal_available'];
+
+                 $entertainment = $summary_details['entertainment_plans'];
+
+                //  $check_in = $summary_details['check_in'];
+
+                //  $check_out = $summary_details['check_out'];
+
+
+
+
+
+                ?>
+                <div class="activity1">
+                  <h6>Purchase Inclusions</h6>
+                  <div class="first">
+                    <?php foreach($purchase_inclusions as $purchase_inclusions) { ?>
+
+                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp; <?php echo $purchase_inclusions->name; ?></p>
+                    <?php } ?>
                   </div>
+
+                </div>
                   <div class="activity2">
                     <h6>Complimentary Land Based Activities</h6>
                     <div class="first">
-                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Gym</p>
-                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Beach Volley</p>
-                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Table tennis</p>
-                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Soccer balls</p>
-                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Yoga</p>
-                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Unlimited access to driving range</p>
-                          
-                          
+                    <?php foreach($complimentary_land_activities as $complimentary_land_activities) { ?>
+                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp; <?php echo $complimentary_land_activities->name; ?></p>
+                      <?php } ?>
                     </div>
-  
+
                   </div>
                   <div class="activity3">
                     <h6>Complimentary Water Based Activities</h6>
                     <div class="first">
-                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Water skiing</p>
-                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Windsurfing</p>
-                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Pedal boats</p>
-                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Kayaking</p>
-                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Aqua Gym</p>
-                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Glass bottom boat trips</p>
-                          
-                          
+                    <?php foreach($complimentary_water_activities as $complimentary_water_activities) { ?>
+                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp; <?php echo $complimentary_water_activities->name; ?></p>
+                      <?php } ?>
                     </div>
-  
+
                   </div>
                 </div>
 
@@ -297,31 +304,27 @@ $post_id = get_the_ID();
                   <div class="activity4">
                     <h6>Meal Plan Available</h6>
                     <div class="first">
-                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Half Board</p>
-                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; All Inclusive</p>
-                          
-                          
-                          
+                    <?php foreach($meal_plan_available as $meal_plan_available) { ?>
+
+                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp; <?php echo $meal_plan_available->name; ?></p>
+                      <?php } ?>
                     </div>
                   </div>
                   <div class="activity5">
                     <h6>Entertainment</h6>
                     <div class="first">
-                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Live music</p>
-                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; DJ & Mauritian Dance Show</p>
-                          
-                          
-                          
+                    <?php foreach($entertainment as $entertainment) { ?>
+
+                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp; <?php echo $entertainment->name; ?></p>
+                      <?php } ?>
                     </div>
                   </div>
                   <div class="activity6">
                     <h6>Check In & Check Out</h6>
                     <div class="first">
-                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Check In Time 14:00</p>
-                      <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Check Out Time 11:00</p>
-                          
-                          
-                          
+                    <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Check In Time 14:00</p>
+                    <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Check Out Time 11:00</p>
+
                     </div>
                   </div>
 
@@ -336,5 +339,217 @@ $post_id = get_the_ID();
     </div>
   </section>
 
-	
+  <!--OTHER PACKAGE SECTION-->
+  <section class="other-packages-section">
+    <div class="site-wrapper">
+      <div class="other-package-wrapper">
+        <div class="other-package-header">
+          <h2>OTHER PACKAGES</h2>
+        </div>
+
+        <!---->
+        <div class="trip-advisor-wrapper" id="trip-advisor-wrapper">
+
+          <div class="wrapp1">
+            <div class="wrapp-image">
+              <img src="<?php echo get_field('hotel_blue_haven_image', $post_id); ?>" alt="">
+              <span>
+                <p>Flash Offer</p>
+              </span>
+            </div>
+            <div class="advisor-style">
+              <div class="style-wrapper">
+                <span>
+                  <img src="wp-content/themes/hotel-booking-freebie/asset/images/Stars.png" alt="">
+
+                  <h4>Hotel Blue Haven</h4>
+
+                  <p>Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. Ipsum est fugiat velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est fugiat velit ea ullamco do</p>
+
+                  <span class="person-room">
+                    <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
+                    <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('hotel_blue_haven_guest', $post_id); ?> x Guests</p>
+                    <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('hotel_blue_haven_rooms', $post_id); ?> x Room</p>
+                  </span>
+
+
+                  <div class="book-now">
+                    <span>
+                      <p class="slashed">$ 10,500</p>
+                      <h3>$ <?php echo get_field('hotel_blue_haven_price', $post_id); ?></h3>
+
+                    </span>
+                    <button>Book  Now</button>
+
+
+                  </div>
+                </span>
+              </div>
+            </div>
+          </div>
+              <!---->
+              <div class="wrapp2">
+                <div class="wrapp2-image">
+                  <img src="<?php echo get_field('lux*_belle_mare_hotel_image', $post_id); ?>" alt="">
+                  <span>
+                    <p>Flash Offer</p>
+                  </span>
+                </div>
+                <div class="advisor-style2">
+                  <div class="style-wrapper">
+                    <span>
+
+
+
+                      <h4>LUX* Belle Mare</h4>
+
+                      <span class="person-room">
+                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
+                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('lux*_belle_mare_hotel_guest', $post_id); ?> x Guests</p>
+                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('lux*_belle_mare_hotel_rooms', $post_id); ?> x Room</p>
+                      </span>
+
+
+                      <div class="book-now">
+                        <span>
+                          <p class="slashed">$ 8,500</p>
+                          <h3>$ <?php echo get_field('lux*_belle_mare_hotel_price', $post_id); ?></h3>
+
+                        </span>
+                        <button>Book  Now</button>
+                      </div>
+                    </span>
+
+
+                  </div>
+                </div>
+
+              </div>
+
+              <!---->
+              <div class="wrapp3">
+                <div class="wrapp3-image">
+                  <img src="<?php echo get_field('white_palace_hotel_image', $post_id); ?>" alt="">
+                  <span>
+                    <p>Flash Offer</p>
+                  </span>
+                </div>
+                <div class="advisor-style3">
+                  <div class="style-wrapper">
+                    <span>
+
+
+
+                      <h4>White Palace</h4>
+
+                      <span class="person-room">
+                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
+                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('white_palace_hotel_guest', $post_id); ?> x Guests</p>
+                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('white_palace_hotel_rooms', $post_id); ?> x Room</p>
+                      </span>
+
+
+                      <div class="book-now">
+                        <span>
+                          <p class="slashed">$ 10,500</p>
+                          <h3>$ <?php echo get_field('white_palace_hotel_price', $post_id); ?></h3>
+
+                        </span>
+                        <button>Book  Now</button>
+                      </div>
+                    </span>
+
+
+                  </div>
+                </div>
+
+              </div>
+
+              <!---->
+              <div class="wrapp4">
+                <div class="wrapp4-image">
+                  <img src="<?php echo get_field('luxury_place_hotel_image', $post_id); ?>" alt="">
+                  <span>
+                    <p>Flash Offer</p>
+                  </span>
+                </div>
+                <div class="advisor-style4">
+                  <div class="style-wrapper">
+                    <span>
+
+
+
+                      <h4>Luxury Place</h4>
+
+                      <span class="person-room">
+                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
+                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('luxury_place_hotel_guest', $post_id); ?> x Guests</p>
+                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('luxury_place_hotel_rooms', $post_id); ?>  x Room</p>
+                      </span>
+
+
+                      <div class="book-now">
+                        <span>
+                          <p class="slashed">$ 4,500</p>
+                          <h3>$ <?php echo get_field('luxury_place_hotel_price', $post_id); ?> </h3>
+
+                        </span>
+                        <button>Book  Now</button>
+                      </div>
+                    </span>
+
+
+                  </div>
+                </div>
+
+              </div>
+
+              <!---->
+              <div class="wrapp5">
+                <div class="wrapp5-image">
+                <img src="<?php echo get_field('hotel_five_star_hotel_image', $post_id); ?>" alt="">
+                  <span>
+                    <p>Flash Offer</p>
+                  </span>
+                </div>
+                <div class="advisor-style5">
+                  <div class="style-wrapper">
+                    <span>
+
+
+
+                      <h4>Hotel Five Star</h4>
+
+                      <span class="person-room">
+                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
+                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('hotel_five_star_hotel_guest', $post_id); ?> x Guests</p>
+                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('hotel_five_star_hotel_rooms', $post_id); ?> x Room</p>
+                      </span>
+
+
+                      <div class="book-now">
+                        <span>
+                          <p class="slashed">$ 6,500</p>
+                          <h3>$ <?php echo get_field('hotel_five_star_hotel_price', $post_id); ?></h3>
+
+                        </span>
+                        <button>Book  Now</button>
+                      </div>
+                    </span>
+
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 </article><!-- #post-<?php the_ID(); ?> -->
