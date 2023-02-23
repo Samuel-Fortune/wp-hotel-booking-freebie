@@ -29,7 +29,7 @@ $post_id = get_the_ID();
         <div>
           <!--Star image-->
           <span class="stars">
-            <img src="wp-content/themes/hotel-booking-freebie/asset/images/Stars.png" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/asset/images/Stars.png" alt="">
           </span>
           <!--GRAND HILTON HOTEL-->
           <div class="hilton-section">
@@ -84,11 +84,11 @@ $post_id = get_the_ID();
                 <div class="room">
                   <span>
                     <p>
-                    <img src="wp-content/themes/hotel-booking-freebie/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp; <?php echo get_field('number_of_guests', $post_id); ?>x
+                    <img src="<?php echo get_template_directory_uri() ?>/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp; <?php echo get_field('number_of_guests', $post_id); ?>x
                       Guests
                     </p>
                     <p>
-                    <img src="wp-content/themes/hotel-booking-freebie/asset/icons/home.png" alt="">&nbsp;
+                    <img src="<?php echo get_template_directory_uri() ?>/asset/icons/home.png" alt="">&nbsp;
                       &nbsp;
                       &nbsp;
                       <?php echo the_field('number_of_rooms', $post_id); ?>x Room
@@ -102,7 +102,7 @@ $post_id = get_the_ID();
                 <h4>Quick Booking</h4>
                 <span>
                   <p>
-                    <img src="wp-content/themes/hotel-booking-freebie/asset/icons/phone-call.png" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/asset/icons/phone-call.png" alt="">
                     &nbsp;&nbsp;
                     <?php echo the_field('contact', $post_id); ?>
                   </p>
@@ -181,19 +181,34 @@ $post_id = get_the_ID();
               <div class="card-highlight-wrapper">
                 <div class="card-highlight">
 
+                  <?php $package_details = get_field('package_summery', $post_id);
+
+                    $package_highlights = $package_details['package_highlights'];
+                  ?>
+                  <?php $offer_details = get_field('offer_details', $post_id);
+
+                    $special_offer = $offer_details['special_offer'];
+
+                    // $start_date = $offer_details['start_date'];
+
+                    // $end_date = $offer_details['end_date'];
+                  ?>
+                  <?php $package_details_2 = get_field('package_summery', $post_id);
+
+                    $package_highlights_2 = $package_details_2['package_highlights_2'];
+                  ?>
                   <div class="card1">
-                    <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Half Board/ All Inclusive</p>
-                    <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Child Under 11 Years Stay Free</p>
-                    <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LUX* Me Spa</p>
+                    <?php foreach($package_highlights as $package_highlights) { ?>
+
+                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <?php echo $package_highlights->name; ?></p>
+                    <?php } ?>
                   </div>
                   <div class="card2">
-                    <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Luxurious 5-Star Hotel</p>
-                    <p>
-                    <img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Banyan An Adult Only Zone</p>
+                  <?php foreach($package_highlights_2 as $package_highlights_2) { ?>
+                    <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <?php echo $package_highlights_2->name; ?></p>
+                  <?php } ?>
                   </div>
-
                 </div>
-
               </div>
             </div>
 
@@ -215,21 +230,18 @@ $post_id = get_the_ID();
                     &nbsp;
                     <span class="design">
 
-                      <p>Benefit from a special discounted CHILL’OUT OFFER at Grand Hilton Hotel.
-                      </p>
+                      <?php foreach($special_offer as $special_offer) { ?>
+                        <p><?php echo $special_offer->name; ?>
+                        </p>
 
-
-                      <p>
-
-                        * Valid until 30 April 2020
-                      </p>
+                      <?php } ?>
 
                     </span>
 
                   </div>
                   <div class="card2">
-                    <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Vector.png" alt="">&nbsp;&nbsp; 10th March - 30th April 2020</p>
-
+                    <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Vector.png" alt="">&nbsp;&nbsp;10th March
+                    - 30th April 2020</p>
                   </div>
 
                 </div>
@@ -261,14 +273,9 @@ $post_id = get_the_ID();
 
                  $entertainment = $summary_details['entertainment_plans'];
 
-                //  $check_in = $summary_details['check_in'];
+                 $check_in = $summary_details['check_in'];
 
                 //  $check_out = $summary_details['check_out'];
-
-
-
-
-
                 ?>
                 <div class="activity1">
                   <h6>Purchase Inclusions</h6>
@@ -316,15 +323,14 @@ $post_id = get_the_ID();
                     <?php foreach($entertainment as $entertainment) { ?>
 
                       <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp; <?php echo $entertainment->name; ?></p>
-                      <?php } ?>
+                    <?php } ?>
                     </div>
                   </div>
                   <div class="activity6">
                     <h6>Check In & Check Out</h6>
                     <div class="first">
-                    <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Check In Time 14:00</p>
-                    <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/Group.png" alt="">&nbsp;&nbsp; Check Out Time 11:00</p>
-
+                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp; Check In Time 14:00</p>
+                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp; Check Out Time 11:00</p>
                     </div>
                   </div>
 
@@ -360,16 +366,16 @@ $post_id = get_the_ID();
             <div class="advisor-style">
               <div class="style-wrapper">
                 <span>
-                  <img src="wp-content/themes/hotel-booking-freebie/asset/images/Stars.png" alt="">
+                  <img src="<?php echo get_template_directory_uri() ?>/asset/images/Stars.png" alt="">
 
                   <h4>Hotel Blue Haven</h4>
 
                   <p>Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. Ipsum est fugiat velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est fugiat velit ea ullamco do</p>
 
                   <span class="person-room">
-                    <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
-                    <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('hotel_blue_haven_guest', $post_id); ?> x Guests</p>
-                    <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('hotel_blue_haven_rooms', $post_id); ?> x Room</p>
+                    <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
+                    <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('hotel_blue_haven_guest', $post_id); ?> x Guests</p>
+                    <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('hotel_blue_haven_rooms', $post_id); ?> x Room</p>
                   </span>
 
 
@@ -404,9 +410,9 @@ $post_id = get_the_ID();
                       <h4>LUX* Belle Mare</h4>
 
                       <span class="person-room">
-                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
-                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('lux*_belle_mare_hotel_guest', $post_id); ?> x Guests</p>
-                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('lux*_belle_mare_hotel_rooms', $post_id); ?> x Room</p>
+                        <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
+                        <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('lux*_belle_mare_hotel_guest', $post_id); ?> x Guests</p>
+                        <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('lux*_belle_mare_hotel_rooms', $post_id); ?> x Room</p>
                       </span>
 
 
@@ -443,9 +449,9 @@ $post_id = get_the_ID();
                       <h4>White Palace</h4>
 
                       <span class="person-room">
-                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
-                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('white_palace_hotel_guest', $post_id); ?> x Guests</p>
-                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('white_palace_hotel_rooms', $post_id); ?> x Room</p>
+                        <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
+                        <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('white_palace_hotel_guest', $post_id); ?> x Guests</p>
+                        <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('white_palace_hotel_rooms', $post_id); ?> x Room</p>
                       </span>
 
 
@@ -482,9 +488,9 @@ $post_id = get_the_ID();
                       <h4>Luxury Place</h4>
 
                       <span class="person-room">
-                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
-                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('luxury_place_hotel_guest', $post_id); ?> x Guests</p>
-                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('luxury_place_hotel_rooms', $post_id); ?>  x Room</p>
+                        <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
+                        <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('luxury_place_hotel_guest', $post_id); ?> x Guests</p>
+                        <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('luxury_place_hotel_rooms', $post_id); ?>  x Room</p>
                       </span>
 
 
@@ -521,9 +527,9 @@ $post_id = get_the_ID();
                       <h4>Hotel Five Star</h4>
 
                       <span class="person-room">
-                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
-                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('hotel_five_star_hotel_guest', $post_id); ?> x Guests</p>
-                        <p><img src="wp-content/themes/hotel-booking-freebie/asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('hotel_five_star_hotel_rooms', $post_id); ?> x Room</p>
+                        <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
+                        <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('hotel_five_star_hotel_guest', $post_id); ?> x Guests</p>
+                        <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('hotel_five_star_hotel_rooms', $post_id); ?> x Room</p>
                       </span>
 
 
