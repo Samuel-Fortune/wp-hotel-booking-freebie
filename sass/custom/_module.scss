@@ -1006,15 +1006,15 @@
 
 			.wrapp1 {
 				display: flex;
-				width: 65%;
-				flex-direction: row;
+				width: 32%;
+				flex-direction: column;
 				border: 1px;
-				height: 500px;
 
 				.wrapp-image {
-					width: 49%;
+
 					position: relative;
-					border-radius: 8px 0 0 8px;
+					border-radius: 8px 8px 0 0;
+					height: 250px;
 
 					img {
 						height: 100%;
@@ -1024,14 +1024,18 @@
 					span {
 						background-color: $primary-color;
 						color: $secondary-color;
-						width: 95px;
-						height: 30px;
-						border: 1px;
+						width: 90px;
+						height: 18px;
+						border: none;
+						border-radius: 0 4px 4 0;
 						left: 0;
 						top: 20px;
 						position: absolute;
 						display: flex;
 						justify-content: center;
+						align-items: center;
+
+
 
 						p {
 							color: $secondary-color;
@@ -1042,15 +1046,16 @@
 					}
 				}
 
-
 				.advisor-style {
-					width: 54%;
+
+					width: 100%;
+					height: 100%;
 					background-color: $tertiary-color;
 					color: $secondary-color;
-					border-radius: 0 8px 8px 0;
+					border-radius: 0 0 8px 8px;
 
 					.style-wrapper {
-						padding-left: 50px;
+						padding-left: 30px;
 						padding-right: 20px;
 						display: flex;
 						flex-direction: column;
@@ -1066,15 +1071,9 @@
 
 							.person-room {
 
-
 								p:nth-of-type(2),
 								p:nth-of-type(3) {
 									margin-top: 0;
-
-								}
-
-								p:nth-of-type(3) {
-									margin-bottom: 20px !important;
 								}
 
 								p {
@@ -1082,634 +1081,121 @@
 									font-style: normal;
 									font-weight: 400;
 									font-size: $medium-sizing;
+									line-height: calc($Large-sizing + 2px);
 									display: flex;
 									align-items: center;
 									margin-bottom: 0;
-									padding-bottom: 0;
+
+
+
+
+								}
+
+							}
+
+							p {
+								font-family: Mulish;
+								font-style: normal;
+								font-weight: 400;
+								font-size: $medium-sizing;
+								line-height: calc($Large-sizing + 2px);
+								display: flex;
+								align-items: center;
+								margin-bottom: 40px;
+
+							}
+
+
+							.book-now {
+								display: flex;
+								justify-content: space-between;
+								align-items: center;
+
+
+								span {
+
+									.slashed {
+										text-decoration: line-through;
+										margin-bottom: 0;
+									}
+
+									h3 {
+										margin-top: 0;
+									}
+								}
+
+								button {
+
+									background-color: $primary-color;
+									color: $secondary-color;
+									width: 50%;
+									height: 40px;
+									border: none;
+									border-radius: 4px;
+								}
+							}
+						}
+					}
+				}
+
+				&:first-of-type {
+					width: 65%;
+					flex-direction: row;
+
+					.wrapp-image {
+						width: 49%;
+						border-radius: 8px 0 0 8px;
+						height: 575px;
+
+						img {
+							height: 100%;
+							width: 100%;
+						}
+
+						span {
+							width: 95px;
+							height: 30px;
+							border: 1px;
+						}
+					}
+
+					.advisor-style {
+						width: 54%;
+						border-radius: 0 8px 8px 0;
+
+						.style-wrapper {
+							padding-left: 50px;
+
+							.person-room {
+								p {
+
+									&:nth-of-type(3) {
+										margin-bottom: 20px !important;
+									}
 
 									a {
 										margin-bottom: 0;
 									}
-
 								}
-
 							}
 
-							p {
-								font-family: Mulish;
-								font-style: normal;
-								font-weight: 400;
-								font-size: 14px;
-								display: flex;
-								align-items: center;
-								margin-bottom: 40px;
+						   p {
 								padding-top: 8px;
-
-
 							}
 
 
 							.book-now {
-								display: flex;
-								justify-content: space-between;
-								align-items: center;
-								padding-top: 10px;
-
 
 								span {
 
 									.slashed {
-										text-decoration: line-through;
-										margin-bottom: 0;
 										padding-bottom: 0;
 									}
-
-									h3 {
-										margin-top: 0;
-									}
-								}
-
-								button {
-
-									background-color: $primary-color;
-									color: $secondary-color;
-									width: 50%;
-									height: 40px;
-									border: none;
-									border-radius: 4px;
-									font-family: Nunito;
-									font-style: normal;
-									font-weight: 600;
-									font-size: 14px;
-									line-height: 19px;
 								}
 							}
 						}
+
 					}
-
-
-				}
-			}
-
-			.wrapp2 {
-				display: flex;
-				width: 33%;
-				flex-direction: column;
-				border: 1px;
-				height: 500px;
-
-				.wrapp2-image {
-					height: 250px;
-					position: relative;
-					border-radius: 8px 8px 0 0;
-
-					img {
-						height: 100%;
-						width: 100%;
-					}
-
-					span {
-						background-color: $primary-color;
-						color: $secondary-color;
-						width: 90px;
-						height: 18px;
-						border: none;
-						border-radius: 0 4px 4px 0;
-						left: 0;
-						top: 20px;
-						position: absolute;
-						display: flex;
-						justify-content: center;
-						align-items: center;
-
-						p {
-							color: $secondary-color;
-							display: flex;
-							align-items: center;
-							justify-content: center;
-							font-family: Mulish;
-							font-style: normal;
-							font-weight: 600;
-							font-size: 8px;
-							line-height: 10px;
-						}
-					}
-				}
-
-
-				.advisor-style2 {
-
-					width: 100%;
-					height: 250px;
-					background-color: $tertiary-color;
-					color: $secondary-color;
-					border-radius: 0 0 8px 8px;
-
-					.style-wrapper {
-						padding-left: 30px;
-						padding-right: 20px;
-						display: flex;
-						flex-direction: column;
-						justify-content: space-between;
-						margin-top: $largest-sizing;
-
-
-						span {
-
-							h4 {
-								margin-top: 0;
-							}
-
-							.person-room {
-
-								p:nth-of-type(2),
-								p:nth-of-type(3) {
-									margin-top: 0;
-								}
-
-								p {
-									font-family: Mulish;
-									font-style: normal;
-									font-weight: 400;
-									font-size: $medium-sizing;
-									display: flex;
-									align-items: center;
-									margin-bottom: 0;
-
-								}
-
-							}
-
-							p {
-								font-family: Mulish;
-								font-style: normal;
-								font-weight: 400;
-								font-size: 14px;
-								display: flex;
-								align-items: center;
-								margin-bottom: 40px;
-
-							}
-
-
-							.book-now {
-								display: flex;
-								justify-content: space-between;
-								align-items: center;
-
-
-								span {
-
-									.slashed {
-										text-decoration: line-through;
-										margin-bottom: 0;
-									}
-
-									h3 {
-										margin-top: 0;
-									}
-								}
-
-								button {
-
-									background-color: $primary-color;
-									color: $secondary-color;
-									width: 50%;
-									height: 40px;
-									border: none;
-									border-radius: 4px;
-									font-family: Nunito;
-									font-style: normal;
-									font-weight: 600;
-									font-size: 14px;
-									line-height: 19px;
-								}
-							}
-						}
-					}
-
-
-				}
-			}
-
-
-			.wrapp3 {
-				display: flex;
-				width: 30%;
-				flex-direction: column;
-				border: 1px;
-				height: 500px;
-
-				.wrapp3-image {
-					height: 250px;
-					position: relative;
-					border-radius: 8px 8px 0 0;
-
-					img {
-						width: 100%;
-						height: 100%;
-					}
-
-					span {
-						background-color: $primary-color;
-						color: $secondary-color;
-						width: 90px;
-						height: 18px;
-						border: none;
-						border-radius: 0 4px 4px 0;
-						left: 0;
-						top: 20px;
-						position: absolute;
-						display: flex;
-						justify-content: center;
-						align-items: center;
-
-						p {
-							color: $secondary-color;
-							display: flex;
-							align-items: center;
-							justify-content: center;
-							font-family: Mulish;
-							font-style: normal;
-							font-weight: 600;
-							font-size: 8px;
-							line-height: 10px;
-						}
-					}
-				}
-
-
-				.advisor-style3 {
-					height: 250px;
-					width: 100%;
-					background-color: $tertiary-color;
-					color: $secondary-color;
-					border-radius: 0 0 8px 8px;
-
-					.style-wrapper {
-						padding-left: 30px;
-						padding-right: 20px;
-						display: flex;
-						flex-direction: column;
-						justify-content: space-between;
-						margin-top: $largest-sizing;
-
-
-						span {
-
-							h4 {
-								margin-top: 0;
-							}
-
-							.person-room {
-
-								p:nth-of-type(2),
-								p:nth-of-type(3) {
-									margin-top: 0;
-								}
-
-								p {
-									font-family: Mulish;
-									font-style: normal;
-									font-weight: 400;
-									font-size: $medium-sizing;
-									display: flex;
-									align-items: center;
-									margin-bottom: 0;
-
-								}
-
-							}
-
-							p {
-								font-family: Mulish;
-								font-style: normal;
-								font-weight: 400;
-								font-size: 14px;
-								display: flex;
-								align-items: center;
-								margin-bottom: 40px;
-
-							}
-
-
-							.book-now {
-								display: flex;
-								justify-content: space-between;
-								align-items: center;
-
-
-								span {
-
-									.slashed {
-										text-decoration: line-through;
-										margin-bottom: 0;
-									}
-
-									h3 {
-										margin-top: 0;
-									}
-								}
-
-								button {
-
-									background-color: $primary-color;
-									color: $secondary-color;
-									width: 50%;
-									height: 40px;
-									border: none;
-									border-radius: 4px;
-									font-family: Nunito;
-									font-style: normal;
-									font-weight: 600;
-									font-size: 14px;
-									line-height: 19px;
-								}
-							}
-						}
-					}
-
-
-				}
-			}
-
-			.wrapp4 {
-				display: flex;
-				width: 33%;
-				flex-direction: column;
-				border: 1px;
-				height: 500px;
-
-				.wrapp4-image {
-					height: 250px;
-					position: relative;
-					border-radius: 8px 8px 0 0;
-
-					img {
-						width: 100%;
-						height: 100%;
-					}
-
-					span {
-						background-color: $primary-color;
-						color: $secondary-color;
-						width: 90px;
-						height: 18px;
-						border: none;
-						border-radius: 0 4px 4px 0;
-						left: 0;
-						top: 20px;
-						position: absolute;
-						display: flex;
-						justify-content: center;
-						align-items: center;
-
-						p {
-							color: $secondary-color;
-							display: flex;
-							align-items: center;
-							justify-content: center;
-							font-family: Mulish;
-							font-style: normal;
-							font-weight: 600;
-							font-size: 8px;
-							line-height: 10px;
-						}
-					}
-				}
-
-
-				.advisor-style4 {
-					height: 250px;
-					width: 100%;
-					background-color: $tertiary-color;
-					color: $secondary-color;
-					border-radius: 0 0 8px 8px;
-
-					.style-wrapper {
-						padding-left: 30px;
-						padding-right: 20px;
-						display: flex;
-						flex-direction: column;
-						justify-content: space-between;
-						margin-top: $largest-sizing;
-
-
-						span {
-
-							h4 {
-								margin-top: 0;
-							}
-
-							.person-room {
-
-								p:nth-of-type(2),
-								p:nth-of-type(3) {
-									margin-top: 0;
-								}
-
-								p {
-									font-family: Mulish;
-									font-style: normal;
-									font-weight: 400;
-									font-size: $medium-sizing;
-									display: flex;
-									align-items: center;
-									margin-bottom: 0;
-
-								}
-
-							}
-
-							p {
-								font-family: Mulish;
-								font-style: normal;
-								font-weight: 400;
-								font-size: 14px;
-								display: flex;
-								align-items: center;
-								margin-bottom: 40px;
-
-							}
-
-
-							.book-now {
-								display: flex;
-								justify-content: space-between;
-								align-items: center;
-
-
-								span {
-
-									.slashed {
-										text-decoration: line-through;
-										margin-bottom: 0;
-									}
-
-									h3 {
-										margin-top: 0;
-									}
-								}
-
-								button {
-
-									background-color: $primary-color;
-									color: $secondary-color;
-									width: 50%;
-									height: 40px;
-									border: none;
-									border-radius: 4px;
-									font-family: Nunito;
-									font-style: normal;
-									font-weight: 600;
-									font-size: 14px;
-									line-height: 19px;
-								}
-							}
-						}
-					}
-
-
-				}
-			}
-
-			.wrapp5 {
-				display: flex;
-				width: 33%;
-				flex-direction: column;
-				border: 1px;
-				height: 500px;
-
-				.wrapp5-image {
-					height: 250px;
-					position: relative;
-					border-radius: 8px 8px 0 0;
-
-					img {
-						width: 100%;
-						height: 100%;
-					}
-
-					span {
-						background-color: $primary-color;
-						color: $secondary-color;
-						width: 90px;
-						height: 18px;
-						border: none;
-						border-radius: 0 4px 4px 0;
-						left: 0;
-						top: 20px;
-						position: absolute;
-						display: flex;
-						justify-content: center;
-						align-items: center;
-
-						p {
-							color: $secondary-color;
-							display: flex;
-							align-items: center;
-							justify-content: center;
-							font-family: Mulish;
-							font-style: normal;
-							font-weight: 600;
-							font-size: 8px;
-							line-height: 10px;
-						}
-					}
-				}
-
-
-				.advisor-style5 {
-					height: 250px;
-					width: 100%;
-					background-color: $tertiary-color;
-					color: $secondary-color;
-					border-radius: 0 0 8px 8px;
-
-					.style-wrapper {
-						padding-left: 30px;
-						padding-right: 20px;
-						display: flex;
-						flex-direction: column;
-						justify-content: space-between;
-						margin-top: $largest-sizing;
-
-
-						span {
-
-							h4 {
-								margin-top: 0;
-							}
-
-							.person-room {
-
-								p:nth-of-type(2),
-								p:nth-of-type(3) {
-									margin-top: 0;
-								}
-
-								p {
-									font-family: Mulish;
-									font-style: normal;
-									font-weight: 400;
-									font-size: $medium-sizing;
-									display: flex;
-									align-items: center;
-									margin-bottom: 0;
-
-								}
-
-							}
-
-							p {
-								font-family: Mulish;
-								font-style: normal;
-								font-weight: 400;
-								font-size: 14px;
-								display: flex;
-								align-items: center;
-								margin-bottom: 40px;
-
-							}
-
-
-							.book-now {
-								display: flex;
-								justify-content: space-between;
-								align-items: center;
-
-
-								span {
-
-									.slashed {
-										text-decoration: line-through;
-										margin-bottom: 0;
-									}
-
-									h3 {
-										margin-top: 0;
-									}
-								}
-
-								button {
-
-									background-color: $primary-color;
-									color: $secondary-color;
-									width: 50%;
-									height: 40px;
-									border: none;
-									border-radius: 4px;
-									font-family: Nunito;
-									font-style: normal;
-									font-weight: 600;
-									font-size: 14px;
-									line-height: 19px;
-								}
-							}
-						}
-					}
-
-
 				}
 			}
 

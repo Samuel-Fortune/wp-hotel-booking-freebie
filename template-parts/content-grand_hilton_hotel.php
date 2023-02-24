@@ -356,200 +356,68 @@ $post_id = get_the_ID();
         <!---->
         <div class="trip-advisor-wrapper" id="trip-advisor-wrapper">
 
-          <div class="wrapp1">
-            <div class="wrapp-image">
-              <img src="<?php echo get_field('hotel_blue_haven_image', $post_id); ?>" alt="">
-              <span>
-                <p>Flash Offer</p>
-              </span>
-            </div>
-            <div class="advisor-style">
-              <div class="style-wrapper">
-                <span>
-                  <img src="<?php echo get_template_directory_uri() ?>/asset/images/Stars.png" alt="">
+          <?php
 
-                  <h4>Hotel Blue Haven</h4>
+            $args = array (
+              'post_type' => 'grand_hilton_hotel',
+              'posts_per_page' => 5,
+              'post_not_in' => [$post_id]
+            );
+            $result = new \WP_Query($args);
 
-                  <p>Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. Ipsum est fugiat velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est fugiat velit ea ullamco do</p>
-
-                  <span class="person-room">
-                    <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
-                    <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('hotel_blue_haven_guest', $post_id); ?> x Guests</p>
-                    <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('hotel_blue_haven_rooms', $post_id); ?> x Room</p>
-                  </span>
-
-
-                  <div class="book-now">
+            if($result->have_posts()){
+              $count3 = 0;
+              while ( $result->have_posts() ) {
+                $result->the_post();
+                $item_id = get_the_ID();
+                $count3 ++;?>
+                <div class="wrapp1">
+                  <div class="wrapp-image">
+                    <img src="<?php  echo get_the_post_thumbnail_url();?>" alt="">
                     <span>
-                      <p class="slashed">$ 10,500</p>
-                      <h3>$ <?php echo get_field('hotel_blue_haven_price', $post_id); ?></h3>
-
+                      <p><?php echo get_field('flash_offer', $item_id); ?></p>
                     </span>
-                    <button>Book  Now</button>
-
-
                   </div>
-                </span>
-              </div>
-            </div>
+                  <div class="advisor-style"> 
+                    <div class="style-wrapper">
+
+                      <span>
+                        <?php if($count3 === 1){ ?>
+                          <p><img src="<?php echo get_template_directory();?>/asset/images/Stars.png" alt=""></p>
+                        <?php } ?>
+        
+                          <h4><?php echo get_the_title() ?></h4>
+
+                          <?php if($count3 === 1){ ?>
+                          <p><?php echo get_field('hotel_information', $item_id); ?></p>
+                        <?php } ?>
+
+                        <span class="person-room">
+                          <p><img src="<?php echo get_template_directory_uri();?>/asset/icons/map-pin.png" alt="">&nbsp;&nbsp; <?php echo get_field('contact', $item_id); ?></p>
+                          <p><img src="<?php echo get_template_directory_uri();?>/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('number_of_rooms', $item_id); ?> x Guests</p>
+                          <p><img src="<?php echo get_template_directory_uri();?>/asset/icons/Vector(18).png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('number_of_guests', $item_id); ?> x Room</p>
+                        </span>
+
+                              
+                        <div class="book-now">
+                          <span>
+                            <p class="slashed"><?php echo get_field('slashed_price', $item_id); ?></p>
+                            <h3><?php echo get_field('prices', $item_id); ?></h3>
+
+                          </span>
+                          <button><?php echo get_field('book_now', $item_id); ?></button>
+                        </div>
+                      </span>
+
+
+                    </div>
+                  </div>
+                </div>
+              <?php }
+            } ?>
+
+
           </div>
-              <!---->
-              <div class="wrapp2">
-                <div class="wrapp2-image">
-                  <img src="<?php echo get_field('lux*_belle_mare_hotel_image', $post_id); ?>" alt="">
-                  <span>
-                    <p>Flash Offer</p>
-                  </span>
-                </div>
-                <div class="advisor-style2">
-                  <div class="style-wrapper">
-                    <span>
-
-
-
-                      <h4>LUX* Belle Mare</h4>
-
-                      <span class="person-room">
-                        <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
-                        <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('lux*_belle_mare_hotel_guest', $post_id); ?> x Guests</p>
-                        <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('lux*_belle_mare_hotel_rooms', $post_id); ?> x Room</p>
-                      </span>
-
-
-                      <div class="book-now">
-                        <span>
-                          <p class="slashed">$ 8,500</p>
-                          <h3>$ <?php echo get_field('lux*_belle_mare_hotel_price', $post_id); ?></h3>
-
-                        </span>
-                        <button>Book  Now</button>
-                      </div>
-                    </span>
-
-
-                  </div>
-                </div>
-
-              </div>
-
-              <!---->
-              <div class="wrapp3">
-                <div class="wrapp3-image">
-                  <img src="<?php echo get_field('white_palace_hotel_image', $post_id); ?>" alt="">
-                  <span>
-                    <p>Flash Offer</p>
-                  </span>
-                </div>
-                <div class="advisor-style3">
-                  <div class="style-wrapper">
-                    <span>
-
-
-
-                      <h4>White Palace</h4>
-
-                      <span class="person-room">
-                        <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
-                        <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('white_palace_hotel_guest', $post_id); ?> x Guests</p>
-                        <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('white_palace_hotel_rooms', $post_id); ?> x Room</p>
-                      </span>
-
-
-                      <div class="book-now">
-                        <span>
-                          <p class="slashed">$ 10,500</p>
-                          <h3>$ <?php echo get_field('white_palace_hotel_price', $post_id); ?></h3>
-
-                        </span>
-                        <button>Book  Now</button>
-                      </div>
-                    </span>
-
-
-                  </div>
-                </div>
-
-              </div>
-
-              <!---->
-              <div class="wrapp4">
-                <div class="wrapp4-image">
-                  <img src="<?php echo get_field('luxury_place_hotel_image', $post_id); ?>" alt="">
-                  <span>
-                    <p>Flash Offer</p>
-                  </span>
-                </div>
-                <div class="advisor-style4">
-                  <div class="style-wrapper">
-                    <span>
-
-
-
-                      <h4>Luxury Place</h4>
-
-                      <span class="person-room">
-                        <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
-                        <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('luxury_place_hotel_guest', $post_id); ?> x Guests</p>
-                        <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('luxury_place_hotel_rooms', $post_id); ?>  x Room</p>
-                      </span>
-
-
-                      <div class="book-now">
-                        <span>
-                          <p class="slashed">$ 4,500</p>
-                          <h3>$ <?php echo get_field('luxury_place_hotel_price', $post_id); ?> </h3>
-
-                        </span>
-                        <button>Book  Now</button>
-                      </div>
-                    </span>
-
-
-                  </div>
-                </div>
-
-              </div>
-
-              <!---->
-              <div class="wrapp5">
-                <div class="wrapp5-image">
-                <img src="<?php echo get_field('hotel_five_star_hotel_image', $post_id); ?>" alt="">
-                  <span>
-                    <p>Flash Offer</p>
-                  </span>
-                </div>
-                <div class="advisor-style5">
-                  <div class="style-wrapper">
-                    <span>
-
-
-
-                      <h4>Hotel Five Star</h4>
-
-                      <span class="person-room">
-                        <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/map-pin.png" alt="">&nbsp;&nbsp; 1749 Wheeler Ridge  Delaware</p>
-                        <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('hotel_five_star_hotel_guest', $post_id); ?> x Guests</p>
-                        <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/home.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('hotel_five_star_hotel_rooms', $post_id); ?> x Room</p>
-                      </span>
-
-
-                      <div class="book-now">
-                        <span>
-                          <p class="slashed">$ 6,500</p>
-                          <h3>$ <?php echo get_field('hotel_five_star_hotel_price', $post_id); ?></h3>
-
-                        </span>
-                        <button>Book  Now</button>
-                      </div>
-                    </span>
-
-
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
 
           </div>
         </div>
