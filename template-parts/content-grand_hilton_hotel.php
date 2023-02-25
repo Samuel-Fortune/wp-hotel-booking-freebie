@@ -113,12 +113,12 @@ $post_id = get_the_ID();
           </div>
           <div class="mapouter">
             <div class="gmap_canvas map">
-            <?php echo the_field('hilton_map', $post_id); ?>
+            
               <iframe
                 width="600"
                 height="213"
                 id="gmap_canvas"
-                src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                src="<?php echo the_field('hilton_map', $post_id); ?>"
                 frameborder="0"
                 scrolling="no"
                 marginheight="0"

@@ -117,7 +117,7 @@
 					 id="nav-search-input"
 					 />
 					 <button class="search-button">
-					   <img src="wp-content/themes/hotel-booking-freebie/asset/icons/FindButton.png" alt="">
+					   <img src="<?php echo get_template_directory_uri() ?>/asset/icons/FindButton.png" alt="">
 					 </button>
 				    </form>
 			    </div><!-- .site-branding -->
@@ -171,10 +171,10 @@
 				</span>
 
 				<span class="profile">
-					<img src="wp-content/themes/hotel-booking-freebie/asset/images/Ellipse1.png" alt="">
+					<img src="<?php echo get_template_directory_uri() ?>/asset/images/Ellipse1.png" alt="">
 					<p>Nathan</p>
 					<button class="button">
-					<img src="wp-content/themes/hotel-booking-freebie/asset/images/Vector(Stroke).png" alt="">
+					<img src="<?php echo get_template_directory_uri() ?>/asset/images/Vector(Stroke).png" alt="">
 					</button>
 				</span>
 
