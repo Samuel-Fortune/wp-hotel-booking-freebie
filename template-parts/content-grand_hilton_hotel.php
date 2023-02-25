@@ -214,6 +214,7 @@ $post_id = get_the_ID();
               <span class="details-header">
 
                 <h5>Offer Details</h5>
+                
               </span>
               <div class="card-details-wrapper">
                 <div class="card-Details">
@@ -267,7 +268,7 @@ $post_id = get_the_ID();
 
                  $entertainment = $summary_details['entertainment_plans'];
 
-                 $check_in = $summary_details['check_in'];
+                 $check_in_check_out = $summary_details['check_in_check_out'];
 
                 //  $check_out = $summary_details['check_out'];
                 ?>
@@ -323,8 +324,10 @@ $post_id = get_the_ID();
                   <div class="activity6">
                     <h6>Check In & Check Out</h6>
                     <div class="first">
-                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt=""> Check In Time 14:00</p>
-                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt=""> Check Out Time 11:00</p>
+                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt=""> Check In Time <?php echo $check_in_check_out['check_in']; 
+                      ?></p>
+                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt=""> Check Out Time<?php echo $check_in_check_out['check_out']; 
+                      ?></p>
                     </div>
                   </div>
 
