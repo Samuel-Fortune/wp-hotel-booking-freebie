@@ -375,7 +375,7 @@
 				span {
 
 					p {
-
+						gap: $smallest-sizing;
 						font-family: Nunito;
 						font-style: normal;
 						font-weight: 400;
@@ -412,6 +412,7 @@
 			span {
 
 				p {
+					gap: $smallest-sizing;
 					font-family: Nunito;
 					font-style: normal;
 					font-weight: 600;
@@ -576,6 +577,7 @@
 
 							p {
 								display: flex;
+								gap: $smallest-sizing;
 								align-items: center;
 								font-family: Mulish;
 								font-style: normal;
@@ -632,6 +634,7 @@
 
 							display: flex;
 							justify-content: center;
+							gap: $smallest-sizing;
 
 							.design {
 								display: flex;
@@ -642,6 +645,7 @@
 
 								p {
 									margin: 0;
+									gap: $smallest-sizing;
 									font-family: Mulish;
 									font-style: normal;
 									font-weight: 400;
@@ -659,7 +663,7 @@
 
 							p {
 								margin-top: 0;
-
+								gap: $smallest-sizing;
 								font-family: Mulish;
 								font-weight: 400;
 								font-size: $medium-sizing;
@@ -781,7 +785,6 @@
 
 					.activity1 {
 						// width: 258px;
-						height: 300px;
 
 						h6 {
 							color: $primary-color;
@@ -800,6 +803,7 @@
 
 							p {
 								align-items: center;
+								gap: $smallest-sizing;
 								display: flex;
 								font-family: Mulish;
 								font-style: normal;
@@ -811,7 +815,6 @@
 
 					.activity2 {
 						// width: 284px;
-						height: 238px;
 
 						h6 {
 							color: $primary-color;
@@ -830,6 +833,7 @@
 
 							p {
 								align-items: center;
+								gap: $smallest-sizing;
 								display: flex;
 								font-family: Mulish;
 								font-style: normal;
@@ -841,7 +845,6 @@
 
 					.activity3 {
 						// width: 238px;
-						height: 233px;
 
 						h6 {
 							color: $primary-color;
@@ -860,6 +863,7 @@
 
 							p {
 								align-items: center;
+								gap: $smallest-sizing;
 								display: flex;
 								font-family: Mulish;
 								font-style: normal;
@@ -871,7 +875,6 @@
 
 					.activity4 {
 						// width: 121px;
-						height: 90px;
 						width: 192px;
 
 						h6 {
@@ -891,6 +894,7 @@
 
 							p {
 								align-items: center;
+								gap: $smallest-sizing;
 								display: flex;
 								font-family: Mulish;
 								font-style: normal;
@@ -902,7 +906,6 @@
 
 					.activity5 {
 						// width: 194px;
-						height: 90px;
 
 						h6 {
 							color: $primary-color;
@@ -921,6 +924,7 @@
 
 							p {
 								align-items: center;
+								gap: $smallest-sizing;
 								display: flex;
 								font-family: Mulish;
 								font-style: normal;
@@ -932,7 +936,6 @@
 
 					.activity6 {
 						// width: 163px;
-						height: 90px;
 
 						h6 {
 							color: $primary-color;
@@ -951,6 +954,7 @@
 
 							p {
 								align-items: center;
+								gap: $smallest-sizing;
 								display: flex;
 								font-family: Mulish;
 								font-style: normal;
@@ -1083,6 +1087,7 @@
 									display: flex;
 									align-items: center;
 									margin-bottom: 0;
+									gap: 10px;
 
 								}
 
@@ -1136,11 +1141,12 @@
 				&:first-of-type {
 					width: 65%;
 					flex-direction: row;
+					height: 500px;
 
 					.wrapp-image {
 						width: 49%;
 						border-radius: 8px 0 0 8px;
-						height: 575px;
+						height: 500px;
 
 						img {
 							height: 100%;
@@ -1177,6 +1183,8 @@
 
 							p {
 								padding-top: 8px;
+								margin-bottom: 0;
+								margin-top: 6px;
 							}
 
 

@@ -480,6 +480,7 @@ $breakpoint arguments choices:
   flex-direction: column;
 }
 .hotel-wrapper .view-options .price-room .room span p {
+  gap: 10px;
   font-family: Nunito;
   font-style: normal;
   font-weight: 400;
@@ -505,6 +506,7 @@ $breakpoint arguments choices:
   line-height: 25px;
 }
 .hotel-wrapper .view-options .booking span p {
+  gap: 10px;
   font-family: Nunito;
   font-style: normal;
   font-weight: 600;
@@ -629,6 +631,7 @@ $breakpoint arguments choices:
 .package-section .package-container .package-summery .package-offer .package-card1 .package-card-details .card-head .card-Details .card2 p,
 .package-section .package-container .package-summery .package-card-details .card-head .package-offer .package-card1 .card-Details .card2 p {
   display: flex;
+  gap: 10px;
   align-items: center;
   font-family: Mulish;
   font-style: normal;
@@ -670,6 +673,7 @@ $breakpoint arguments choices:
 .package-section .package-container .package-summery .package-offer .package-card2 .card-Details .card1 {
   display: flex;
   justify-content: center;
+  gap: 10px;
 }
 .package-section .package-container .package-summery .package-offer .package-card2 .card-Details .card1 .design {
   display: flex;
@@ -680,6 +684,7 @@ $breakpoint arguments choices:
 }
 .package-section .package-container .package-summery .package-offer .package-card2 .card-Details .card1 .design p {
   margin: 0;
+  gap: 10px;
   font-family: Mulish;
   font-style: normal;
   font-weight: 400;
@@ -692,6 +697,7 @@ $breakpoint arguments choices:
 }
 .package-section .package-container .package-summery .package-offer .package-card2 .card-Details .card2 p {
   margin-top: 0;
+  gap: 10px;
   font-family: Mulish;
   font-weight: 400;
   font-size: 14px;
@@ -771,9 +777,6 @@ $breakpoint arguments choices:
   justify-content: space-between;
   height: 165px;
 }
-.package-section .package-container .package-summery .package-card-details .summary-details .activity1 {
-  height: 300px;
-}
 .package-section .package-container .package-summery .package-card-details .summary-details .activity1 h6 {
   color: #ec1f46;
   width: 122px;
@@ -790,13 +793,11 @@ $breakpoint arguments choices:
 }
 .package-section .package-container .package-summery .package-card-details .summary-details .activity1 .first p {
   align-items: center;
+  gap: 10px;
   display: flex;
   font-family: Mulish;
   font-style: normal;
   line-height: 15px;
-}
-.package-section .package-container .package-summery .package-card-details .summary-details .activity2 {
-  height: 238px;
 }
 .package-section .package-container .package-summery .package-card-details .summary-details .activity2 h6 {
   color: #ec1f46;
@@ -814,13 +815,11 @@ $breakpoint arguments choices:
 }
 .package-section .package-container .package-summery .package-card-details .summary-details .activity2 .first p {
   align-items: center;
+  gap: 10px;
   display: flex;
   font-family: Mulish;
   font-style: normal;
   line-height: 15px;
-}
-.package-section .package-container .package-summery .package-card-details .summary-details .activity3 {
-  height: 233px;
 }
 .package-section .package-container .package-summery .package-card-details .summary-details .activity3 h6 {
   color: #ec1f46;
@@ -838,13 +837,13 @@ $breakpoint arguments choices:
 }
 .package-section .package-container .package-summery .package-card-details .summary-details .activity3 .first p {
   align-items: center;
+  gap: 10px;
   display: flex;
   font-family: Mulish;
   font-style: normal;
   line-height: 15px;
 }
 .package-section .package-container .package-summery .package-card-details .summary-details .activity4 {
-  height: 90px;
   width: 192px;
 }
 .package-section .package-container .package-summery .package-card-details .summary-details .activity4 h6 {
@@ -863,13 +862,11 @@ $breakpoint arguments choices:
 }
 .package-section .package-container .package-summery .package-card-details .summary-details .activity4 .first p {
   align-items: center;
+  gap: 10px;
   display: flex;
   font-family: Mulish;
   font-style: normal;
   line-height: 15px;
-}
-.package-section .package-container .package-summery .package-card-details .summary-details .activity5 {
-  height: 90px;
 }
 .package-section .package-container .package-summery .package-card-details .summary-details .activity5 h6 {
   color: #ec1f46;
@@ -887,13 +884,11 @@ $breakpoint arguments choices:
 }
 .package-section .package-container .package-summery .package-card-details .summary-details .activity5 .first p {
   align-items: center;
+  gap: 10px;
   display: flex;
   font-family: Mulish;
   font-style: normal;
   line-height: 15px;
-}
-.package-section .package-container .package-summery .package-card-details .summary-details .activity6 {
-  height: 90px;
 }
 .package-section .package-container .package-summery .package-card-details .summary-details .activity6 h6 {
   color: #ec1f46;
@@ -911,6 +906,7 @@ $breakpoint arguments choices:
 }
 .package-section .package-container .package-summery .package-card-details .summary-details .activity6 .first p {
   align-items: center;
+  gap: 10px;
   display: flex;
   font-family: Mulish;
   font-style: normal;
@@ -1015,6 +1011,7 @@ $breakpoint arguments choices:
   display: flex;
   align-items: center;
   margin-bottom: 0;
+  gap: 10px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp1 .advisor-style .style-wrapper span p {
   font-family: Mulish;
@@ -1049,11 +1046,12 @@ $breakpoint arguments choices:
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp1:first-of-type {
   width: 65%;
   flex-direction: row;
+  height: 500px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp1:first-of-type .wrapp-image {
   width: 49%;
   border-radius: 8px 0 0 8px;
-  height: 575px;
+  height: 500px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp1:first-of-type .wrapp-image img {
   height: 100%;
@@ -1079,6 +1077,8 @@ $breakpoint arguments choices:
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp1:first-of-type .advisor-style .style-wrapper p {
   padding-top: 8px;
+  margin-bottom: 0;
+  margin-top: 6px;
 }
 .other-packages-section .other-package-wrapper .trip-advisor-wrapper .wrapp1:first-of-type .advisor-style .style-wrapper .book-now span .slashed {
   padding-bottom: 0;

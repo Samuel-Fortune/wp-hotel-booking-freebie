@@ -84,13 +84,11 @@ $post_id = get_the_ID();
                 <div class="room">
                   <span>
                     <p>
-                    <img src="<?php echo get_template_directory_uri() ?>/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp; <?php echo get_field('number_of_guests', $post_id); ?>x
+                    <img src="<?php echo get_template_directory_uri() ?>/asset/icons/user.png" alt=""><?php echo get_field('number_of_guests', $post_id); ?>x
                       Guests
                     </p>
                     <p>
-                    <img src="<?php echo get_template_directory_uri() ?>/asset/icons/home.png" alt="">&nbsp;
-                      &nbsp;
-                      &nbsp;
+                    <img src="<?php echo get_template_directory_uri() ?>/asset/icons/home.png" alt="">
                       <?php echo the_field('number_of_rooms', $post_id); ?>x Room
 
                     </p>
@@ -103,7 +101,6 @@ $post_id = get_the_ID();
                 <span>
                   <p>
                     <img src="<?php echo get_template_directory_uri() ?>/asset/icons/phone-call.png" alt="">
-                    &nbsp;&nbsp;
                     <?php echo the_field('contact', $post_id); ?>
                   </p>
                 </span>
@@ -200,12 +197,12 @@ $post_id = get_the_ID();
                   <div class="card1">
                     <?php foreach($package_highlights as $package_highlights) { ?>
 
-                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <?php echo $package_highlights->name; ?></p>
+                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt=""><?php echo $package_highlights->name; ?></p>
                     <?php } ?>
                   </div>
                   <div class="card2">
                   <?php foreach($package_highlights_2 as $package_highlights_2) { ?>
-                    <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <?php echo $package_highlights_2->name; ?></p>
+                    <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt=""> <?php echo $package_highlights_2->name; ?></p>
                   <?php } ?>
                   </div>
                 </div>
@@ -225,9 +222,6 @@ $post_id = get_the_ID();
                     <span >
                     <img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">
                     </span>
-                    &nbsp;
-                    &nbsp;
-                    &nbsp;
                     <span class="design">
 
                       <?php foreach($special_offer as $special_offer) { ?>
@@ -240,7 +234,7 @@ $post_id = get_the_ID();
 
                   </div>
                   <div class="card2">
-                    <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Vector.png" alt="">&nbsp;&nbsp;10th March
+                    <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Vector.png" alt="">10th March
                     - 30th April 2020</p>
                   </div>
 
@@ -282,7 +276,7 @@ $post_id = get_the_ID();
                   <div class="first">
                     <?php foreach($purchase_inclusions as $purchase_inclusions) { ?>
 
-                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp; <?php echo $purchase_inclusions->name; ?></p>
+                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt=""><?php echo $purchase_inclusions->name; ?></p>
                     <?php } ?>
                   </div>
 
@@ -291,7 +285,7 @@ $post_id = get_the_ID();
                     <h6>Complimentary Land Based Activities</h6>
                     <div class="first">
                     <?php foreach($complimentary_land_activities as $complimentary_land_activities) { ?>
-                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp; <?php echo $complimentary_land_activities->name; ?></p>
+                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt=""><?php echo $complimentary_land_activities->name; ?></p>
                       <?php } ?>
                     </div>
 
@@ -300,7 +294,7 @@ $post_id = get_the_ID();
                     <h6>Complimentary Water Based Activities</h6>
                     <div class="first">
                     <?php foreach($complimentary_water_activities as $complimentary_water_activities) { ?>
-                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp; <?php echo $complimentary_water_activities->name; ?></p>
+                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt=""><?php echo $complimentary_water_activities->name; ?></p>
                       <?php } ?>
                     </div>
 
@@ -313,7 +307,7 @@ $post_id = get_the_ID();
                     <div class="first">
                     <?php foreach($meal_plan_available as $meal_plan_available) { ?>
 
-                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp; <?php echo $meal_plan_available->name; ?></p>
+                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt=""><?php echo $meal_plan_available->name; ?></p>
                       <?php } ?>
                     </div>
                   </div>
@@ -322,15 +316,15 @@ $post_id = get_the_ID();
                     <div class="first">
                     <?php foreach($entertainment as $entertainment) { ?>
 
-                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp; <?php echo $entertainment->name; ?></p>
+                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt=""> <?php echo $entertainment->name; ?></p>
                     <?php } ?>
                     </div>
                   </div>
                   <div class="activity6">
                     <h6>Check In & Check Out</h6>
                     <div class="first">
-                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp; Check In Time 14:00</p>
-                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt="">&nbsp;&nbsp; Check Out Time 11:00</p>
+                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt=""> Check In Time 14:00</p>
+                      <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Group.png" alt=""> Check Out Time 11:00</p>
                     </div>
                   </div>
 
@@ -383,26 +377,24 @@ $post_id = get_the_ID();
 
                       <span>
                         <?php if($count3 === 1){ ?>
-                          <p><img src="<?php echo get_template_directory();?>/asset/images/Stars.png" alt=""></p>
+                          <p><img src="<?php echo get_field('hotel_blue_haven_stars', $item_id); ?>" alt=""></p>
                         <?php } ?>
-        
                           <h4><?php echo get_the_title() ?></h4>
-
                           <?php if($count3 === 1){ ?>
                           <p><?php echo get_field('hotel_information', $item_id); ?></p>
                         <?php } ?>
 
                         <span class="person-room">
-                          <p><img src="<?php echo get_template_directory_uri();?>/asset/icons/map-pin.png" alt="">&nbsp;&nbsp; <?php echo get_field('contact', $item_id); ?></p>
-                          <p><img src="<?php echo get_template_directory_uri();?>/asset/icons/user.png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('number_of_rooms', $item_id); ?> x Guests</p>
-                          <p><img src="<?php echo get_template_directory_uri();?>/asset/icons/Vector(18).png" alt="">&nbsp;&nbsp;&nbsp;<?php echo get_field('number_of_guests', $item_id); ?> x Room</p>
+                          <p><img src="<?php echo get_template_directory_uri();?>/asset/icons/map-pin.png" alt=""> <?php echo get_field('contact', $item_id); ?></p>
+                          <p><img src="<?php echo get_template_directory_uri();?>/asset/icons/user.png" alt=""><?php echo get_field('number_of_rooms', $item_id); ?> x Guests</p>
+                          <p><img src="<?php echo get_template_directory_uri();?>/asset/icons/home.png" alt=""><?php echo get_field('number_of_guests', $item_id); ?> x Room</p>
                         </span>
 
                               
                         <div class="book-now">
                           <span>
-                            <p class="slashed"><?php echo get_field('slashed_price', $item_id); ?></p>
-                            <h3><?php echo get_field('prices', $item_id); ?></h3>
+                            <p class="slashed">$<?php echo get_field('slashed_price', $item_id); ?></p>
+                            <h3>$<?php echo get_field('prices', $item_id); ?></h3>
 
                           </span>
                           <button><?php echo get_field('book_now', $item_id); ?></button>
