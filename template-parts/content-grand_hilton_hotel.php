@@ -186,6 +186,10 @@ $post_id = get_the_ID();
 
                     $special_offer = $offer_details['special_offer'];
 
+                    $start_date = $offer_details['start_date'];
+
+                    $end_date = $offer_details['end_date'];
+
                     // $start_date = $offer_details['start_date'];
 
                     // $end_date = $offer_details['end_date'];
@@ -235,8 +239,7 @@ $post_id = get_the_ID();
 
                   </div>
                   <div class="card2">
-                    <p><img src="<?php echo get_template_directory_uri() ?>/asset/icons/Vector.png" alt="">10th March
-                    - 30th April 2020</p>
+                    <p><img src="<?php echo get_template_directory_uri(); ?>/asset/icons/Vector.png"> <?php  foreach ($start_date as $start_date); echo $start_date->name; ?> <?php foreach ($end_date as $end_date); echo $end_date->name; ?></p>
                   </div>
 
                 </div>

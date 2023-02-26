@@ -184,7 +184,7 @@
 			</div>
 		</div>
 		<div class="nav-bottom">
-			</div>
+			
 			<!-- -->
 			<nav id="site-navigation" class="main-navigation nav-bottom">
 			    <div class="site-wrapper">
@@ -192,18 +192,19 @@
 						<?php esc_html_e('Primary Menu', 'hotel-booking-freebie');?>
 					</button>
 					<?php
-wp_nav_menu(
-    array(
-        'theme_location' => 'menu-1',
-        'menu_class' => 'list-menu',
-        'container' => 'div',
-        'container_class' => 'nav-buttom-list',
-        'container_id' => 'nav-buttom-list-menu',
-        'menu_id' => 'primary-menu',
-        'items_wrap' => '<ul class="list-menu">%3$s</ul>',
-    )
-);
-?>
+						wp_nav_menu(
+							array(
+								'theme_location' => 'menu-1',
+								'menu_class' => 'list-menu',
+								'container' => 'div',
+								'container_class' => 'nav-buttom-list',
+								'container_id' => 'nav-buttom-list-menu',
+								'menu_id' => 'primary-menu',
+								'items_wrap' => '<ul class="list-menu">%3$s</ul>',
+							)
+						);
+                    ?>
 				</div>
 			</nav><!-- #site-navigation -->
+		</div>
 	</header><!-- #masthead -->
